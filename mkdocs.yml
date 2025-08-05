@@ -88,7 +88,9 @@ nav:
   - Home: index.md
   - Lab:
       - Overview: overview.md
-      - Lab 1 - Getting Started: lab1_getting_started.md
+      - Lab 1 - Webex AI Agent (KB): lab1_getting_started.md
+      - Lab 2 - Webex AI Agent (Acion): lab1_getting_started.md
+      - Lab 3 - AI Assitant : lab1_getting_started.md
       - Conclusion: conclusion.md
   - Topologies: topologies.md
   - How to use this guide:
