@@ -104,17 +104,13 @@ For **'Body'** section use:
 
 
 
-## **Section 1a - Configuring the Car Order Creation Action for the Webex AI Agent**
-
-!!! tip
-	If you manually created the car order action above, move directly to the [**Section 2 - Configuring car order status, modify and, delete actions for Webex AI Agent**](#section-2-configuring-the-car-order-status-modify-and-delete-actions-for-the-webex-ai-agent) section.
+## **Section 2 - Configure AI Agent Car Order Action**
 
 - Navigate back to the AI Agent Studio and to your Autonomous Webex AI Agent.
+
 - Select **'Actions'** and click **'New Action'**.
 
-
 ![Nav](./assets/t2s1ap1.png){ width="600" }
-
 
 - Provide an **'Action Name'** (use _carordercreate_).
 - Provide the following **'Action description'**:
@@ -127,7 +123,6 @@ Provide orderid after a successful order.
 ![Nav](./assets/t2s1ap2.png){ width="500" }
 
 - Select the service you created in the previous task under **'Select service'** and the flow created above under **'Select a flow'**.
-- (If **Section 1** was skipped, select prebuilt service _CiscoLive25AIAgentFlows_ under **'Select service'** and _carordercheck_ flow under **'Select a flow'**).
 
 ![Nav](./assets/t2s1ap3.png){ width="500" }
 
