@@ -127,7 +127,7 @@ In this lab, participants will learn to:
   
 - The autonomous AI agent for answering questions is successfully created and is now available on the Dashboard.
 
-      ![Nav](./assets/Excercise4_15.png){ width="600" }
+      ![Nav](./assets/Excercise4_15.png){ width="700" }
 
 - The Profile tab on the Agent Configuration page, after creation, allows you to change the agent's image, the AI engine it uses, its goal, and the welcome message displayed when the bot is initiated.  
 
@@ -150,9 +150,9 @@ In this lab, participants will learn to:
 
 - Now it's time to test the bot. One way to check if the bot is constructing and answering queries correctly is to use the Preview option.
 
-      ![Nav](./assets/Excercise4_16.png){ width="500" }
+      ![Nav](./assets/Excercise4_16.png){ width="300" }
 
-- Click the "Preview" button , a chat window appears in the bottom right corner of the pane where questions can be entered.
+- Click the "Preview" button , a chat window appears in the bottom right corner of the pane where questions can be entered. Choose "start a Chat" option
 
       ![Nav](./assets/Excercise4_17.png){ width="300" }
 
@@ -180,7 +180,7 @@ In this lab, participants will learn to:
 
 - As the Role Definition dictated answering within 50 words, you will see the answer within that limit.
 
-      ![Nav](./assets/Excercise4_18_3.png){ width="500" }
+      ![Nav](./assets/Excercise4_18_3.png){ width="400" }
 
 - You can now view the details of these sessions and the history of configuration changes performed on the AI agent through the Sessions section. 
 
@@ -202,7 +202,7 @@ In this lab, participants will learn to:
 
 - The system displays the following session details:
 
-      ![Nav](./assets/Excercise4_21.png){ width="500" }
+      ![Nav](./assets/Excercise4_21.png){ width="600" }
   
     - The left panel displays details about the transactions.
     - The right panel displays details about slot filling and fulfillment related to all actions. This is applicable to actionable actions for the bot.
