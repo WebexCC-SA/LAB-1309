@@ -35,6 +35,7 @@ To ensure the WxCC Tenant can be enabled for this feature and that the feature c
 **Objective**
 
 In this lab, participants will learn to:
+
 - Set up Autonomous AI Agents from scratch.
 - Configure these agents to generate and present answers to queries by accessing and utilizing a knowledge repository.
 - Create and manage the underlying knowledge base
