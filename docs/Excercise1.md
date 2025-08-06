@@ -83,6 +83,8 @@ In this lab, participants will learn to:
 
 - Clear the console logs by selecting the "Clear Console" button and click Process File to process them. 
 
+      ![Nav](./assets/Excercise4_7_1.png){ width="500" }
+
       ![Nav](./assets/Excercise4_7.png){ width="500" }
 
 - When done, the system lists the files under the Files tab.
@@ -91,9 +93,12 @@ In this lab, participants will learn to:
 
 - The browser logs will show a 'success' status, along with the 'kb_id', 'kb_category_id', and 'kb_documented_id'. 
 
-- Note: This is essential information for Cisco TAC team to analyze and troubleshoot any issues that may have caused the upload to fail. 
+      ![Nav](./assets/Excercise4_8_1.png){ width="500" }
+
+!!! Note
+       This is essential information for Cisco TAC team to analyze and troubleshoot any issues that may have caused the upload to fail. 
   
-- Navigate to the Information tab to view and track the details of the files you uploaded and the documents you created , KB ID is also present on the top right corner. 
+- Navigate to the Information tab to view and track the details of the files you uploaded and the documents you created , KB ID is also present on the top left corner. 
 
       ![Nav](./assets/Excercise4_9.png){ width="500" }
 
