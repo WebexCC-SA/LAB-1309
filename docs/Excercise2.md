@@ -12,18 +12,19 @@ Please use the following credentials to connect to Control Hub and configure Web
 
 **Objective**
 
-	- Explore and set up multiple Autonomous Webex AI Agent actions using Webex Connect flows.
-	- Configure Webex Connect flows to interact with external APIs for data handling and fulfillment.
+In this lab, audience will learn to explore and set up Autonomous Webex AI Agent actions using Webex Connect flows. They will also learn how to configure these flows to interact with external APIs, allowing the AI Agent to handle data and fulfill requests by connecting to other services.
 
-## **Section 1 - Creating a Webex Connect Flow for the Car Order in the Webex AI Agent Action**
+## **Section 1 : Create a Webex Connect Flow for Car Order**
 
-- Action fulfillment will be handled via Webex Connect flows. Begin by creating a Webex Connect flow, which can later be selected to a specific Webex AI action.
+- Action fulfillment for the agent is always handled via Webex Connect flows. 
+
+- Lets begin by creating a Webex Connect flow, which can later be selected to a specific Webex AI action.
 
 - Navigate to the Webex Connect portal through the **'Quick Links'** section in the Webex Contact Center area of Control Hub.
 
 ![Nav](./assets/t2s1p1.png){ width="300" }
 
-- Create a new service by clicking **'Create New Service'** and providing a name (i.e. _carorderservice_andy_).
+- Create a new service by clicking **'Create New Service'** and providing a name (i.e. Webexone_carorderservice_Name_).
 
 ![Nav](./assets/t2s1p2.png){ width=800" }
 
@@ -31,12 +32,12 @@ Please use the following credentials to connect to Control Hub and configure Web
 
 ![Nav](./assets/t2s1p3.png){ width="800" }
   
-- Proivde a **'Flow Name'** (i.e. _carcreateorder_), ensure that **'Start from Scrach'** is selected, and click **'Create'**. 
+- Proivde a **'Flow Name'** (i.e. _carcreateorder_name_), ensure that **'Start from Scrach'** is selected, and click **'Create'**. 
 
 !!! info
 	This flow will interact with external database using API to create a car order.
 
-![Nav](./assets/t2s1p4.png){ width="600" }
+![Nav](./assets/t2s1p4.png){ width="500" }
 
 - In the next menu, select **'AI Agent'** under **'Integrations'**.
 
@@ -53,11 +54,11 @@ Please use the following credentials to connect to Control Hub and configure Web
 ```
 - Click **'Parse'** and **'Save'**.
 
-![Nav](./assets/t2s1p6.png){ width="800" }
+![Nav](./assets/t2s1p6.png){ width="500" }
 
 - Drag the **'HTTP Request'** node from the left-hand side menu, place it next to the **'AI Agent'** node, and connect them by clicking and holding the green dot on the **'AI Agent'** node and dragging it to the **'HTTP Request'** node.
 
-![Nav](./assets/t2s1p7.png){ width="800" }
+![Nav](./assets/t2s1p7.png){ width="600" }
 
 - Double click on the **'HTTP Request'** node and fill the fields as follows:
 
@@ -83,13 +84,13 @@ For **'Body'** section use:
 
 - Click **'Save'**.
 
-![Nav](./assets/t2s1p8.png){ width="800" }
+![Nav](./assets/t2s1p8.png){ width="600" }
 
 - Configure **'HTTP Request'** node outcomes by dragging the orange, green, and red outcome dots to empty space on the canvas and selecting appropriate outcomes (e.g., **'onTimeout'** - Error, **'onSuccess'** - Success, **'onError'** - Error).
 
-![Nav](./assets/t2s1p9.png){ width="600" }
-![Nav](./assets/t2s1p10.png){ width="600" }
-![Nav](./assets/t2s1p11.png){ width="600" }
+![Nav](./assets/t2s1p9.png){ width="500" }
+![Nav](./assets/t2s1p10.png){ width="500" }
+![Nav](./assets/t2s1p11.png){ width="500" }
 
 - Next, click **'Flow Settings'** (gear icon), navigate to **'Flow Outcomes'**, and expand **'Last Execution Status'** outcome.
 - Click **'Add New'**, use 'orderid' under **'Key'** and '$(n3.orderid)' under **'Value'**.
