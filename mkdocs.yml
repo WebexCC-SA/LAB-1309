@@ -89,7 +89,7 @@ nav:
   - Lab:
       - Overview: overview.md
       - Lab 1 - Webex AI Agent (KB): Excercise1.md
-      - Lab 2 - Webex AI Agent (Acion): lab1_getting_started.md
+      - Lab 2 - Webex AI Agent (Acion): Excercise2.md
       - Lab 3 - AI Assitant : lab1_getting_started.md
       - Conclusion: conclusion.md
   - Topologies: topologies.md
