@@ -59,7 +59,7 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_3.png){ width="300" }
 
-- On the Create Knowledge Base page, enter the knowledge base name as CiscoLive_YourName.
+- On the Create Knowledge Base page, enter the knowledge base name as WebexOne_YourName.
 
 - Click Create. The system creates a knowledge base with the specified name.
 
@@ -77,15 +77,23 @@ In this lab, participants will learn to:
 !!! Note
         The system supports the following file formats: PDF, DOC, DOCX, DOCX, TXT, XLSX, XLS, and CSV. The size of each file must not exceed 2 MB.
 
-- After adding the files, click Process Files to process them. 
+- After adding the file, bring up the browser developer tool (Shortcut: Press F12 Key). 
+
+- Once the developer tool is up, ensure that it's on the "Console" tab.
+
+- Clear the console logs by selecting the "Clear Console" button and click Process File to process them. 
 
       ![Nav](./assets/Excercise4_7.png){ width="500" }
 
 - When done, the system lists the files under the Files tab.
 
       ![Nav](./assets/Excercise4_8.png){ width="500" }
+
+- The browser logs will show a 'success' status, along with the 'kb_id', 'kb_category_id', and 'kb_documented_id'. 
+
+- Note: This is essential information for Cisco TAC team to analyze and troubleshoot any issues that may have caused the upload to fail. 
   
-- Navigate to the Information tab to view and track the details of the files you uploaded and the documents you created
+- Navigate to the Information tab to view and track the details of the files you uploaded and the documents you created , KB ID is also present on the top right corner. 
 
       ![Nav](./assets/Excercise4_9.png){ width="500" }
 
@@ -106,7 +114,7 @@ In this lab, participants will learn to:
 - On the 'Add the essential details' specify the following details:
     - Agent name: Enter the name of the AI agent.
     - System ID: A system-generated unique identifier. This field is editable.
-    - AI engine: Select the required AI engine from the drop-down list. (by default its NOVA)
+    - AI engine: Select the required AI engine from the drop-down list  (default its Webex AI Pro 1.0 ).
     - Agent's goal: Provide a brief description of the AI agent's goal which in this case is to answer queries hence the prompt "Answer Support Questions". 
     - Click Create button at the bottom of the screen.
 
@@ -143,7 +151,7 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_17.png){ width="300" }
 
-- To test in this example, we pose the question "What are the support service options?"
+- To test in this example, we pose the question "What warranty comes with the vehicle?"
   
 - The response provided was accurate and consistent with the knowledge base created for this bot
 
@@ -163,7 +171,7 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_18_1.png){ width="500" }
 
-- To test, pose the same question: "What are the support service options?"
+- To test, pose the same question: "What warranty comes with the vehicle?"
 
 - As the Role Definition dictated answering within 50 words, you will see the answer within that limit.
 
