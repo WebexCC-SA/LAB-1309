@@ -152,7 +152,7 @@ Provide orderid after a successful order.
 
 - Click 'Preview' and Verify the functionality by creating a car order. 
 
-![Nav](./assets/Excercise4_16.png){ width="300" }
+![Nav](./assets/Excercise4_16.png){ width="200" }
 
 - For guidance the screenshot provides an example of how an order is created. 
 	- First, the user expressed the intent to buy a new car. 
@@ -160,22 +160,22 @@ Provide orderid after a successful order.
 	- When a detail was missed, the agent was able to ask the user to provide the missing parameter to complete the order. 
 	- Once it received all the necessary information, it successfully created the order and provided the order details. 
 
-![Nav](./assets/t2s3ap2.png){ width="500" }
+![Nav](./assets/t2s3ap2.png){ width="800" }
 
 - You can also access the datastore where these orders are stored and updated by entering the following URL into your browser:
    https://68085a3f942707d722ddf6a8.mockapi.io/api/cars.
 
-![Nav](./assets/t2s3ap3.png){ width="500" }
+![Nav](./assets/t2s3ap3.png){ width="800" }
 
 - Lets verify the session details to confirm what actions where taken , knowledge used etc. 
 
 - Select the  'Sessions' option in the left-hand menu and select a Session ID
 
-![Nav](./assets/t2s3ap4.png){ width="500" }
+![Nav](./assets/t2s3ap4.png){ width="800" }
 
 - Review each message and observe the actions taken, knowledge used, etc., by the Webex AI Agent on the right-hand side
 
-![Nav](./assets/t2s3ap5.png){ width="500" }
+![Nav](./assets/t2s3ap5.png){ width="800" }
 
 Congratulations! You have successfully completed this task and the lab! If you'd like, you can also explore Bonus section 4 to dive and see how the orders can be modified. 
 
