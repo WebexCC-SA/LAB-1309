@@ -29,6 +29,7 @@ Furthermore, AI Agents can be easily scaled to accommodate high volumes of custo
 **Prerequisites**
 
 To ensure the WxCC Tenant can be enabled for this feature and that the feature can be used effectively, the following requirements must be adhered to:
+
 - Webex Contact Center tenant with Flex 3 subscription and A-FLEX-AI-AGT SKU
 - Webex Connect capability on the tenant.
 
