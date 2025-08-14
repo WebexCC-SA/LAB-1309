@@ -1,4 +1,4 @@
-# Excercise 1 - Webex AI Agent 
+# Excercise 1 - Autonomous AI Agents with Knowledge Bases
 
 
 
@@ -50,11 +50,11 @@ In this lab, participants will learn to:
 
 - In Quick Links on the right pane of the Contact Center suite section, click Webex AI Agent to access the studio.
 
-      ![Nav](./assets/Excercise4_1.png){ width="600" }
+      ![Nav](./assets/Excercise4_1.png){ width="700" }
 
 - On the Dashboard, click the Knowledge icon on the left navigation pane to go to the Knowledge Bases page.
 
-      ![Nav](./assets/Excercise4_2.png){ width="300" }
+      ![Nav](./assets/Excercise4_2.png){ width="500" }
 
 - Click + Create Knowledge Base on the upper right corner.
 
@@ -94,7 +94,7 @@ In this lab, participants will learn to:
 
 - The browser logs will show a 'success' status, along with the 'kb_id', 'kb_category_id', and 'kb_documented_id'. 
 
-      ![Nav](./assets/Excercise4_8_1.png){ width="500" }
+      ![Nav](./assets/Excercise4_8_1.png){ width="700" }
 
 !!! Note
        This is essential information for Cisco TAC team to analyze and troubleshoot any issues that may have caused the upload to fail. 
@@ -107,7 +107,7 @@ In this lab, participants will learn to:
 
 - On the Dashboard, click +Create agent.
 
-      ![Nav](./assets/Excercise4_10.png){ width="500" }
+      ![Nav](./assets/Excercise4_10.png){ width="600" }
 
 - On the Create an AI Agent screen, click Start from scratch tile followed by Next button (bottom of the screen)
 
@@ -128,7 +128,7 @@ In this lab, participants will learn to:
   
 - The autonomous AI agent for answering questions is successfully created and is now available on the Dashboard.
 
-      ![Nav](./assets/Excercise4_15.png){ width="700" }
+      ![Nav](./assets/Excercise4_15.png){ width="800" }
 
 - The Profile tab on the Agent Configuration page, after creation, allows you to change the agent's image, the AI engine it uses, its goal, and the welcome message displayed when the bot is initiated.  
 
@@ -203,7 +203,7 @@ In this lab, participants will learn to:
 
 - The system displays the following session details:
 
-      ![Nav](./assets/Excercise4_21.png){ width="600" }
+      ![Nav](./assets/Excercise4_21.png){ width="800" }
   
     - The left panel displays details about the transactions.
     - The right panel displays details about slot filling and fulfillment related to all actions. This is applicable to actionable actions for the bot.
