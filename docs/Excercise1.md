@@ -11,7 +11,7 @@ Please use the following credentials to connect to Control Hub and configure Web
 | `Password`       | ciscoliveAMER25! |
 
 
-**AI Agents Overview**
+# **AI Agents Overview**
 
 Cisco Webex AI Agents provide automated assistance to customers before they interact with human agents across voice or digital channels. These agents leverage language understanding and contextual awareness within conversations. Residing within the CPaaS ecosystem, administrators can utilize the Webex AI Agent Studio platform to design, create, manage, and deploy these agents to meet customer service and support needs.
 
@@ -26,14 +26,14 @@ Two primary types of AI Agents are currently available:
 Integrating these agents into customer business ecosystems can significantly enhance customer experience by delivering personalized, real-time conversational interactions. 
 Furthermore, AI Agents can be easily scaled to accommodate high volumes of customer interactions without the need for additional human agents, leading to improved customer satisfaction and reduced operational costs.
 
-**Prerequisites**
+# **Prerequisites**
 
 To ensure the WxCC Tenant can be enabled for this feature and that the feature can be used effectively, the following requirements must be adhered to:
 
 - Webex Contact Center tenant with Flex 3 subscription and A-FLEX-AI-AGT SKU
 - Webex Connect capability on the tenant.
 
-**Objective**
+# **Objective**
 
 In this lab, participants will learn to:
 
@@ -41,7 +41,7 @@ In this lab, participants will learn to:
 - Configure these agents to generate and present answers to queries by accessing and utilizing a knowledge repository.
 - Create and manage the underlying knowledge base
 
-**Steps**
+# **Steps**
 
 - Since the task is to create autonomous AI agents that are capable of answering questions from a knowledge base, the first step would be to build that knowledge base.
 

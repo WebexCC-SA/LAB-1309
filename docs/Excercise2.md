@@ -1,4 +1,4 @@
-# Task 2 - Autonomous Webex AI Agent Actions
+# Task 2 - Build Autonomous Webex AI Agent Actions
 
 
 
@@ -10,7 +10,7 @@ Please use the following credentials to connect to Control Hub and configure Web
 | `Username`       | wxccemealabs+admin**ID**@gmail.com  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
 | `Password`       | ciscoliveAMER25! |
 
-**Objective**
+## **Objective**
 
 In this lab, audience will learn to explore and set up Autonomous Webex AI Agent actions using Webex Connect flows. They will also learn how to configure these flows to interact with external APIs, allowing the AI Agent to handle data and fulfill requests by connecting to other services.
 
@@ -179,7 +179,7 @@ Provide orderid after a successful order.
 
 Congratulations! You have successfully completed this task and the lab! If you'd like, you can also explore Bonus section 4 to dive and see how the orders can be modified. 
 
-## **Section 4 - Car Order Actions with Webex AI Agent**
+## **Section 4 - Car Order Actions with Webex AI Agent** (Bonus)
 
 To make the Agent more capable, additional bot actions are needed. The configuration process is very similar to the one completed above for order creation. For simplicity, Webex Connect flows for these next actions are already prebuilt and will not require manual configuration.
 
