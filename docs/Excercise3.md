@@ -1,4 +1,4 @@
-# Lab 3 - Voice flow configuration for AI Agent
+# Lab 3 - Create and Test Voice Flows for Webex AI Agents
 
 
 Please use the following credentials to connect to Control Hub and configure Webex Contact Center:
@@ -10,7 +10,7 @@ Please use the following credentials to connect to Control Hub and configure Web
 | `Password`       | ciscoliveAMER25! |
 
 
-**Objective**
+## **Objective**
 
 This lab exercise aims to guide participants in creating and configuring a voice flow for an Autonomous Webex AI Agent that was set up in a previous exercise. Participants will then interact with the AI Agent via a phone call to test the voice flow. 
 

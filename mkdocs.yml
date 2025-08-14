@@ -90,7 +90,7 @@ nav:
       - Overview: overview.md
       - Lab 1 - Autonomous AI Agents with Knowledge Bases : Excercise1.md
       - Lab 2 - Build Autonomous Webex AI Agent Actions: Excercise2.md
-      - Lab 3 - Voice Flow : Excercise3.md
+      - Lab 3 - Create and Test Voice Flows for Webex AI Agents : Excercise3.md
       - Conclusion: conclusion.md
   - Topologies: topologies.md
   - How to use this guide:
