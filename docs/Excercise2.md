@@ -179,7 +179,7 @@ Provide orderid after a successful order.
 
 Congratulations! You have successfully completed this task and the lab! If you'd like, you can also explore Bonus section 4 to dive and see how the orders can be modified. 
 
-## **Section 4 - Car Order Actions with Webex AI Agent** (Bonus)
+## ** Section 4 - Car Order Actions with Webex AI Agent (Bonus) **
 
 To make the Agent more capable, additional bot actions are needed. The configuration process is very similar to the one completed above for order creation. For simplicity, Webex Connect flows for these next actions are already prebuilt and will not require manual configuration.
 
