@@ -84,7 +84,7 @@ For **'Body'** section use:
 
 - Click **'Save'**.
 
-![Nav](./assets/t2s1p8.png){ width="500" }
+![Nav](./assets/t2s1p8.png){ width="700" }
 
 - Configure **'HTTP Request'** node outcomes by dragging the orange, green, and red outcome dots to empty space on the canvas and selecting appropriate outcomes (e.g., **'onTimeout'** - Error, **'onSuccess'** - Success, **'onError'** - Error).
 
