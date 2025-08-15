@@ -84,7 +84,7 @@ For **'Body'** section use:
 
 - Click **'Save'**.
 
-![Nav](./assets/t2s1p8.png){ width="700" }
+![Nav](./assets/t2s1p8.png){ width="800" }
 
 - Configure **'HTTP Request'** node outcomes by dragging the orange, green, and red outcome dots to empty space on the canvas and selecting appropriate outcomes (e.g., **'onTimeout'** - Error, **'onSuccess'** - Success, **'onError'** - Error).
 
@@ -96,7 +96,7 @@ For **'Body'** section use:
 - Click **'Add New'**, use 'orderid' under **'Key'** and '$(n3.orderid)' under **'Value'**.
 - Click **'Save'**.
 
-![Nav](./assets/t2s1p12.png){ width="1000" }
+![Nav](./assets/t2s1p12.png){ width="900" }
 
 - Make the flow live by clicking **'Make Live'** (top right corner) and then clicking  **'Make Live'** again in the next dialog box.
 
@@ -164,7 +164,7 @@ Provide orderid after a successful order.
 
 - In your case, you will see that the agent is not able to provide the order ID. Specifically asking the agent for the order ID was not helpful either.
 
-![Nav](./assets/t2s3ap6.png){ width="500" }
+![Nav](./assets/t2s3ap6.png){ width="400" }
 
 - To begin, verify the session details to confirm the agent's actions by going into the Agent and Sessions Section. 
 
@@ -174,37 +174,37 @@ Provide orderid after a successful order.
 
 - Note that the fulfillment was successful, and information was provided to the Connect Flow for order execution.
 
-![Nav](./assets/t2s3ap7.png){ width="500" }
+![Nav](./assets/t2s3ap7.png){ width="800" }
 
 - Next, lets examine the Connect Flow debugs to see how the information was executed. 
 
 - To access these, navigate to Control Hub > Contact Center Quick Links > Webex Connect, and then select the Connect service you created.
 
-![Nav](./assets/t2s3ap8.png){ width="500" }
+![Nav](./assets/t2s3ap8.png){ width="800" }
 
 - Within the service, select your created Flow and click the Debug option on the right side. The Transaction Logs window will open.
 
-![Nav](./assets/t2s3ap9.png){ width="500" }
+![Nav](./assets/t2s3ap9.png){ width="800" }
 
 - First, click Decrypt Logs to convert the logs into text, then select the latest transaction. 
 
-![Nav](./assets/t2s3ap10.png){ width="500" }
+![Nav](./assets/t2s3ap10.png){ width="800" }
 
 - You will see three nodes being executed. 
 
 - The "Configure AI Agent Event" payload is constructed and passed to the "HTTP Request Node."
 
-![Nav](./assets/t2s3ap11.png){ width="500" }
+![Nav](./assets/t2s3ap11.png){ width="800" }
 
 - In the HTTP Request Node, you'll see the request data was constructed and the API was executed. However, the response data shows a status of 400 Bad Request, indicating the request was not processed due to an invalid request.
 
-![Nav](./assets/t2s3ap12.png){ width="500" }
+![Nav](./assets/t2s3ap12.png){ width="800" }
 
 - The issue lies in the method selected to create the record. PUT is generally used for updating or replacing existing content, but for creating a new record, the correct method is POST.
 
 - To correct this, select the Edit option in the flow. In the HTTP Request Node, change the Method from PUT to POST.
 
-![Nav](./assets/t2s3ap12.png){ width="500" }
+![Nav](./assets/t2s3ap12.png){ width="800" }
 
 - Save the flow and make it Live.
 
