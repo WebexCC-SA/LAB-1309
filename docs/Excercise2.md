@@ -164,7 +164,7 @@ Provide orderid after a successful order.
 
 - In your case, you will see that the agent is not able to provide the order ID. Specifically asking the agent for the order ID was not helpful either.
 
-![Nav](./assets/t2s3ap6.png){ width="400" }
+![Nav](./assets/t2s3ap6.png){ width="300" }
 
 - To begin, verify the session details to confirm the agent's actions by going into the Agent and Sessions Section. 
 
@@ -198,13 +198,13 @@ Provide orderid after a successful order.
 
 - In the HTTP Request Node, you'll see the request data was constructed and the API was executed. However, the response data shows a status of 400 Bad Request, indicating the request was not processed due to an invalid request.
 
-![Nav](./assets/t2s3ap12.png){ width="800" }
+![Nav](./assets/t2s3ap12.png){ width="900" }
 
 - The issue lies in the method selected to create the record. PUT is generally used for updating or replacing existing content, but for creating a new record, the correct method is POST.
 
 - To correct this, select the Edit option in the flow. In the HTTP Request Node, change the Method from PUT to POST.
 
-![Nav](./assets/t2s3ap12.png){ width="800" }
+![Nav](./assets/t2s3ap12.png){ width="900" }
 
 - Save the flow and make it Live.
 
