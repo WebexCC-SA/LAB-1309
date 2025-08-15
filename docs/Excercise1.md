@@ -33,7 +33,7 @@ To ensure the WxCC Tenant can be enabled for this feature and that the feature c
 - Webex Contact Center tenant with Flex 3 subscription and A-FLEX-AI-AGT SKU
 - Webex Connect capability on the tenant.
 
-# **Objective**
+## **Objective**
 
 In this lab, participants will learn to:
 
