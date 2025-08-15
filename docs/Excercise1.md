@@ -41,7 +41,7 @@ In this lab, participants will learn to:
 - Configure these agents to generate and present answers to queries by accessing and utilizing a knowledge repository.
 - Create and manage the underlying knowledge base
 
-# **Steps**
+## **Section 1 : Create Webex AI Agent and Knowledge Base**
 
 - Since the task is to create autonomous AI agents that are capable of answering questions from a knowledge base, the first step would be to build that knowledge base.
 
@@ -104,7 +104,7 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_9.png){ width="500" }
 
-- Now, it's time to create the AI bot itself.
+- Now, it's time to create the AI agent itself.
 
 - On the Dashboard, click +Create agent.
 
@@ -149,6 +149,8 @@ In this lab, participants will learn to:
 - Click Save changes and publish to make the AI agent live.
 
       ![Nav](./assets/Excercise4_24.png){ width="500" }
+
+## **Section 2 : Test Webex AI Agent**
 
 - Now it's time to test the bot. One way to check if the bot is constructing and answering queries correctly is to use the Preview option.
 
