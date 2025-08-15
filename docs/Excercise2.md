@@ -1,7 +1,5 @@
 # Task 2 - Build Autonomous Webex AI Agent Actions
 
-
-
 Please use the following credentials to connect to Control Hub and configure Webex Contact Center:
 
 | <!-- -->         | <!-- -->         |
