@@ -1,7 +1,5 @@
 # Excercise 4 - Explore Webex AI Assistant Feature 
 
-
-
 Please use the following credentials to connect to Control Hub and configure Webex Contact Center:
 
 | <!-- -->         | <!-- -->         |
@@ -26,9 +24,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - To achieve this objective, we must first ensure that the all the summary and transcripts feature is enabled for the tenant. 
 
-- To check this:
-
-- Log in to <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> with the provided credentials.
+- To check this: Log in to <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> with the provided credentials.
 
 - In Control Hub, under Services, click on Contact Center. Then, under Contact Center navigation pane on the left side, scroll down to DESKTOP EXPEREINCE section and click on Cisco AI Assistant.
 
