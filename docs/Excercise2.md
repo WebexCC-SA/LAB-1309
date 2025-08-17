@@ -211,4 +211,6 @@ Provide orderid after a successful order.
 - You can also access the datastore where these orders are stored and updated by entering the following URL into your browser:
    https://68085a3f942707d722ddf6a8.mockapi.io/api/cars
 
+![Nav](./assets/t2s3ap3.png){ width="500" }
+
 Congratulations! You have successfully completed this task and the lab! If you'd like, you can also explore Bonus section 4 to dive and see how the orders can be modified. 
