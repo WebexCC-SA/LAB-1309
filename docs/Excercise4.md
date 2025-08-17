@@ -20,7 +20,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - **Real-time Transcriptions** : Experience how this feature provides a live, real-time transcription of the conversation for agents , improving clarity and customer satisfaction.
 
-## Section 1: 
+## Section 1: VA Summary 
 
 - To achieve this objective, we must first ensure that the all the summary and transcripts feature is enabled for the tenant. 
 
@@ -30,34 +30,38 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 	![Nav](./assets/Excercise1_1.1.png){ width="500" }
 
-- Ensure that the "Call Drop Summary" toggle is enabled.
+- Ensure that the "Call Drop Summary" , "Virtual Agent Transfer Summary" & "Real Time Transcripts"  toggle is enabled.
 
 	![Nav](./assets/Excercise1_1.2.png){ width="500" }
 
 - The next step is to configure the AI Assistant widget for agent use. 
 
-- To accomplish this, the agent's desktop layout must include the "ai-assistant" JSON string in the Agent Advanced Header section
+- To accomplish this, the agent's desktop layout must include the "ai-assistant" JSON string in the Agent > Advanced Header section
 
 - You can review this in Control Hub by navigating to "Desktop Layouts" within the "Desktop Experience" section of the Contact Center services.
 
 	![Nav](./assets/Excercise1_2.png){ width="500" }
 
-- Search and Open the layout CL_2025_AI_CallDropSummary and download the file CL_2025_AI_CallDropSummary.json.
+- Search and Open the layout **Wx1_Desktop_AI_Assistant** and download the file **Wx1_Desktop_AI_Assistant.json**.
 
   	![Nav](./assets/Excercise1_3.png){ width="600" }
   
-- Review the file in a text editor. In the Agent Advanced Header section, you should see the verbiage highlighted in this screenshot
+- Review the file in a text editor. In the Agent > Advanced Header section, you should see the verbiage highlighted in this screenshot
 
 	![Nav](./assets/Excercise1_4.png){ width="400" }
 
-- To simplify the process, the desktop layout has already been mapped to the agents who will test this feature
+- To have a desktop layout reflected for agents, it must be mapped to their teams.
+
+- From User Management section of Control Hub, select Teams and search for your team **WebexOne_Team_<num>** you want to update.
+
+- In the Desktop Layout field of the team setting, ensure that the layout  **Wx1_Desktop_AI_Assistant** is selected and saved.
   
 - Now, log in to the Agent Desktop using the provided credentials.
   	- URL: <a href="https://desktop.wxcc-us1.cisco.com/" target="_blank">https://desktop.wxcc-us1.cisco.com/</a>
   	- Username: `Contact the lab proctor if information is unavailable.`  
   	- Password: `Contact the lab proctor if information is unavailable.`
 	
-- Please select **Extension** as the telephony option. Use the extension provided by the proctor, and set the Team as **MS Dynamic**
+- Please select **Desktop** as the telephony option and set the Team as **WebexOne_Team_<num>**
 
 	![Nav](./assets/Excercise1_5.png){ width="400" }
 
@@ -69,9 +73,20 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Ensure the agent is set to the "Available" state.
 
-- Place a call from your cell phone to the Dialed Number "+14698578314".
+- Using your cell phone, call the number **+1???????**. 
 
-- The call will be auto-accepted, and you will hear a recorded message explaining the call drop summary feature.
+- After speaking briefly with the AI agent, you can escalate the call to a live agent by saying, **I want to speak to an agent**.
+
+- Switch the agent to '**Available**' state on the Webex Contact Center Agent Desktop and accept the call.
+
+- Observe the AI Assistant summary of your conversation with the agent
+
+![Nav](./assets/t4s2p2.png){ width="600" }
+![Nav](./assets/t4s2p3.png){ width="1000" }
+
+- Have a brief conversation with the agent  Ensure that its not more than 10 or 15 seconds long and end the call.
+
+## Section 2: Call Drop Summary 
 
 !!! Note 
 	If you encounter any issues reaching the US number, please contact the instructor. They will be able to make a call on your behalf and demonstrate the Call Drop Summary feature
@@ -87,6 +102,8 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 - This will display a summary of the last dropped call
   
   	![Nav](./assets/Excercise1_7.png){ width="500" }
+
+## Section 3: Live Transcripts  
 
 # Results
 Congratulations, you are now familiar with WxCC Call Drop Summaries feature powered by Cisco AI Assistant!
