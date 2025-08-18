@@ -20,7 +20,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - **Real-time Transcriptions** : Experience how this feature provides a live, real-time transcription of the conversation for agents , improving clarity and customer satisfaction.
 
-## Section 1: VA Summary 
+## **Section 1: VA Summary**
 
 - To achieve this objective, we must first ensure that the all the summary and transcripts feature is enabled for the tenant. 
 
@@ -86,7 +86,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Have a brief conversation with the agent, ensure it's not more than 10 or 15 seconds long, and end the call from the cell phone. 
 
-## Section 2: Call Drop Summary 
+## **Section 2: Call Drop Summary**
 
 - Now, if another call is made that is escalated and presented to an agent, you might expect a call drop summary to appear when the agent accepts the call.
 
@@ -107,7 +107,40 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 More details can be reviewed at this link: https://help.webex.com/article/ndt475w
 
-## Section 3: Live Transcripts  
+## **Section 3: Real-Time Transcripts**
+
+- Real-time transcriptions feature allows agents to access real-time conversation with the caller on their Agent Desktop, enabling them to follow conversations more accurately and respond effectively.
+
+- While completing the "Call Drop Summary" exercise, you may have noticed that transcripts were not visible for the calls, even though the option was enabled in Control Hub along with the "Call Drop Summary" feature.
+
+- This is because, in addition to the tenant-level settings, a "Media Stream" activity must be triggered directly after the agent answers the call.
+
+- This can be achieved in a flow in one of two ways:
+	- Enable transcripts for all queues in the flow.
+	- Enable transcripts for specific queues in the flow.
+
+- For this exercise, we will proceed by enabling transcripts for all queues in the flow as we have only one queue. 
+
+- In Control Hub go to the Flows menu on the left-hand side.
+
+- Search for and select the voice flow you created for the AI Agent exercise.
+
+- On the event flow canvas, click the Edit option.
+
+- Add a Start Media Stream activity node directly after the AgentAnswered event. Make sure the activity is connected to the End Flow Node.
+
+- Validate and Publish the flow. This will enable real-time transcription for every call routed through this flow.
+
+- Now, lets test the transcription feature 
+
+- Ensure your agent is logged in and set to available.
+
+- Make a call and after the interaction with the AI agent, escalate the call to your agent.
+
+- Accept the call and observe the conversation being converted into real-time transcripts in the Transcripts gadget.
+
+Note !!! 
+If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues.
 
 # Results
-Congratulations, you are now familiar with WxCC Call Drop Summaries feature powered by Cisco AI Assistant!
+Congratulations, In this lab, you learned how the AI Assistant enhances the live agent experience. By providing AI Agent Transfer Summaries and Call Drop Summaries, the assistant gives agents instant context. Paired with Real-time Transcriptions, these features ensure agents are always well-informed, leading to more efficient and satisfying customer interactions.
