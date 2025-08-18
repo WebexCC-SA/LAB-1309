@@ -82,26 +82,30 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 - Observe the AI Assistant summary of your conversation with the agent
 
 ![Nav](./assets/t4s2p2.png){ width="600" }
-![Nav](./assets/t4s2p3.png){ width="1000" }
+![Nav](./assets/t4s2p3.png){ width="800" }
 
-- Have a brief conversation with the agent  Ensure that its not more than 10 or 15 seconds long and end the call.
+- Have a brief conversation with the agent, ensure it's not more than 10 or 15 seconds long, and end the call from the cell phone. 
 
 ## Section 2: Call Drop Summary 
 
-!!! Note 
-	If you encounter any issues reaching the US number, please contact the instructor. They will be able to make a call on your behalf and demonstrate the Call Drop Summary feature
+- Now, if another call is made that is escalated and presented to an agent, you might expect a call drop summary to appear when the agent accepts the call.
 
-- Keep the call active with ongoing conversation for approximately 40 seconds, then hang up from your cell phone. 
+- Let's make a call and observe the behavior.
 
-- Make another call to the same number and observe the experience. You should see a notification that "Cisco AI Assistant: Summary ready."
+- You will notice that the summary is not generated when the call is presented to the agent and they answer it.
 
-  	![Nav](./assets/Excercise1_6.png){ width="500" }
-  
-- Click on the "Cisco AI Assistant" option at the top of the screen.
+- This time, continue the conversation with the agent for more than 40 seconds, then end the call from the caller's end.
 
-- This will display a summary of the last dropped call
-  
-  	![Nav](./assets/Excercise1_7.png){ width="500" }
+- Now, when you call back and the agent accepts the call, the call drop summary will be generated.
+
+- The reason this works is that the call has met the following criteria:
+
+	- Recording for these calls is enabled.
+	- The callback to the contact center is within a 24-hour window.
+	- The callback came from the same phone number (ANI) as the original call.
+	- The call was longer than 30 seconds.
+
+More details can be reviewed at this link: https://help.webex.com/article/ndt475w
 
 ## Section 3: Live Transcripts  
 
