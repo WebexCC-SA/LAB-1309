@@ -32,7 +32,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Ensure that the "Call Drop Summary" , "Virtual Agent Transfer Summary" & "Real Time Transcripts"  toggle is enabled.
 
-	![Nav](./assets/ExcerciseAssistant_2.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_2.png){ width="600" }
 
 - The next step is to configure the AI Assistant widget for agent use. 
 
@@ -40,7 +40,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - You can review this in Control Hub by navigating to "Desktop Layouts" within the "Desktop Experience" section of the Contact Center services.
 
-	![Nav](./assets/ExcerciseAssistant_3.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_3.png){ width="700" }
 
 - Search and Open the layout **Wx1_Desktop_AI_Assistant** and download the file **Wx1_Desktop_AI_Assistant.json**.
 
@@ -52,13 +52,13 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - To have a desktop layout reflected for agents, it must be mapped to their teams.
 
-- From User Management section of Control Hub, select Teams and search for your team **WebexOne_Team_<num>** you want to update.
+- From User Management section ossf Control Hub, select Teams and search for your team **WebexOne_Team_<num>** you want to update.
 
-	![Nav](./assets/ExcerciseAssistant_4.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_4.png){ width="200" }
 
 - In the Desktop Layout field of the team setting, ensure that the layout  **Wx1_Desktop_AI_Assistant** is selected and saved.
 
-	![Nav](./assets/ExcerciseAssistant_5.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_5.png){ width="700" }
   
 - Now, log in to the Agent Desktop using the provided credentials.
   	- URL: <a href="https://desktop.wxcc-us1.cisco.com/" target="_blank">https://desktop.wxcc-us1.cisco.com/</a>
@@ -98,9 +98,13 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - You will notice that the summary is not generated when the call is presented to the agent and they answer it.
 
+??????? Screen Shot ?????
+
 - This time, continue the conversation with the agent for more than 40 seconds, then end the call from the caller's end.
 
 - Now, when you call back and the agent accepts the call, the call drop summary will be generated.
+
+??????? Screen Shot ?????
 
 - The reason this works is that the call has met the following criteria:
 
@@ -109,13 +113,15 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 	- The callback came from the same phone number (ANI) as the original call.
 	- The call was longer than 30 seconds.
 
-More details can be reviewed at this link: https://help.webex.com/article/ndt475w
+- More details can be reviewed in this section <a href="https://help.webex.com/article/ndt475w" target="_blank">Frequently Asked Questions (FAQs)</a> 
 
 ## **Section 3: Live Transcripts**
 
 - Real-time transcriptions feature allows agents to access real-time conversation with the caller on their Agent Desktop, enabling them to follow conversations more accurately and respond effectively.
 
 - While completing the "Call Drop Summary" exercise, you may have noticed that transcripts were not visible for the calls, even though the option was enabled in Control Hub along with the "Call Drop Summary" feature.
+
+	![Nav](./assets/ExcerciseAssistant_2.png){ width="500" }
 
 - This is because, in addition to the tenant-level settings, a "Media Stream" activity must be triggered directly after the agent answers the call.
 
