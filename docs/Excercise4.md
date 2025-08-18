@@ -121,7 +121,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - While completing the "Call Drop Summary" exercise, you may have noticed that transcripts were not visible for the calls, even though the option was enabled in Control Hub along with the "Call Drop Summary" feature.
 
-	![Nav](./assets/ExcerciseAssistant_2.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_2.png){ width="600" }
 
 - This is because, in addition to the tenant-level settings, a "Media Stream" activity must be triggered directly after the agent answers the call.
 
