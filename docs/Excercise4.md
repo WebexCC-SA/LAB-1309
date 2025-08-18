@@ -40,7 +40,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - You can review this in Control Hub by navigating to "Desktop Layouts" within the "Desktop Experience" section of the Contact Center services.
 
-	![Nav](./assets/ExcerciseAssistant_3.png){ width="700" }
+	![Nav](./assets/ExcerciseAssistant_3.png){ width="550" }
 
 - Search and Open the layout **Wx1_Desktop_AI_Assistant** and download the file **Wx1_Desktop_AI_Assistant.json**.
 
