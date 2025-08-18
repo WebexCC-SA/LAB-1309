@@ -20,19 +20,19 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - **Real-time Transcriptions** : Experience how this feature provides a live, real-time transcription of the conversation for agents , improving clarity and customer satisfaction.
 
-## **Section 1: VA Summary**
+## **Section 1: AI Agent Transfer Summary**
 
 - To achieve this objective, we must first ensure that the all the summary and transcripts feature is enabled for the tenant. 
 
-- To check this: Log in to <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> with the provided credentials.
+- To check this, Log in to <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> with the provided credentials.
 
 - In Control Hub, under Services, click on Contact Center. Then, under Contact Center navigation pane on the left side, scroll down to DESKTOP EXPEREINCE section and click on Cisco AI Assistant.
 
-	![Nav](./assets/Excercise1_1.1.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_1.png){ width="500" }
 
 - Ensure that the "Call Drop Summary" , "Virtual Agent Transfer Summary" & "Real Time Transcripts"  toggle is enabled.
 
-	![Nav](./assets/Excercise1_1.2.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_2.png){ width="500" }
 
 - The next step is to configure the AI Assistant widget for agent use. 
 
@@ -40,21 +40,25 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - You can review this in Control Hub by navigating to "Desktop Layouts" within the "Desktop Experience" section of the Contact Center services.
 
-	![Nav](./assets/Excercise1_2.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_3.png){ width="500" }
 
 - Search and Open the layout **Wx1_Desktop_AI_Assistant** and download the file **Wx1_Desktop_AI_Assistant.json**.
 
-  	![Nav](./assets/Excercise1_3.png){ width="600" }
+	![Nav](./assets/ExcerciseAssistant_8.png){ width="500" }
   
 - Review the file in a text editor. In the Agent > Advanced Header section, you should see the verbiage highlighted in this screenshot
 
-	![Nav](./assets/Excercise1_4.png){ width="400" }
+	![Nav](./assets/ExcerciseAssistant_7.png){ width="500" }
 
 - To have a desktop layout reflected for agents, it must be mapped to their teams.
 
 - From User Management section of Control Hub, select Teams and search for your team **WebexOne_Team_<num>** you want to update.
 
+	![Nav](./assets/ExcerciseAssistant_4.png){ width="500" }
+
 - In the Desktop Layout field of the team setting, ensure that the layout  **Wx1_Desktop_AI_Assistant** is selected and saved.
+
+	![Nav](./assets/ExcerciseAssistant_5.png){ width="500" }
   
 - Now, log in to the Agent Desktop using the provided credentials.
   	- URL: <a href="https://desktop.wxcc-us1.cisco.com/" target="_blank">https://desktop.wxcc-us1.cisco.com/</a>
@@ -63,13 +67,13 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 	
 - Please select **Desktop** as the telephony option and set the Team as **WebexOne_Team_<num>**
 
-	![Nav](./assets/Excercise1_5.png){ width="400" }
+??????? Screen Shot ?????
 
 - This will load the layout as configured above.
 
 - You will notice the AI Assistant and its capabilities loaded.
 
-	![Nav](./assets/Excercise1_1.png){ width="600" }
+	![Nav](./assets/ExcerciseAssistant_6.png){ width="500" }
 
 - Ensure the agent is set to the "Available" state.
 
@@ -107,7 +111,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 More details can be reviewed at this link: https://help.webex.com/article/ndt475w
 
-## **Section 3: Real-Time Transcripts**
+## **Section 3: Live Transcripts**
 
 - Real-time transcriptions feature allows agents to access real-time conversation with the caller on their Agent Desktop, enabling them to follow conversations more accurately and respond effectively.
 
