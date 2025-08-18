@@ -44,7 +44,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Search and Open the layout **Wx1_Desktop_AI_Assistant** and download the file **Wx1_Desktop_AI_Assistant.json**.
 
-	![Nav](./assets/ExcerciseAssistant_8.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_8.png){ width="600" }
   
 - Review the file in a text editor. In the Agent > Advanced Header section, you should see the verbiage highlighted in this screenshot
 
