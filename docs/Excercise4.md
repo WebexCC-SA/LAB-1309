@@ -126,20 +126,28 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 - This is because, in addition to the tenant-level settings, a "Media Stream" activity must be triggered directly after the agent answers the call.
 
 - This can be achieved in a flow in one of two ways:
-	- Enable transcripts for all queues in the flow.
-	- Enable transcripts for specific queues in the flow.
+	- Enable media stream for all queues in the flow.
+	- Enable media stream for specific queues in the flow.
 
-- For this exercise, we will proceed by enabling transcripts for all queues in the flow as we have only one queue. 
+- For this exercise, we will proceed by enabling media stream for all queues in the flow as we have only one queue. 
 
 - In Control Hub go to the Flows menu on the left-hand side.
+
+	![Nav](./assets/ExcerciseAssistant_9.png){ width="500" }
 
 - Search for and select the voice flow you created for the AI Agent exercise.
 
 - On the event flow canvas, click the Edit option.
 
+	![Nav](./assets/ExcerciseAssistant_10.png){ width="500" }
+
 - Add a Start Media Stream activity node directly after the AgentAnswered event. Make sure the activity is connected to the End Flow Node.
 
+	![Nav](./assets/ExcerciseAssistant_11.png){ width="500" }
+
 - Validate and Publish the flow. This will enable real-time transcription for every call routed through this flow.
+
+	![Nav](./assets/ExcerciseAssistant_12.png){ width="500" }
 
 - Now, lets test the transcription feature 
 
@@ -149,8 +157,11 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Accept the call and observe the conversation being converted into real-time transcripts in the Transcripts gadget.
 
-Note !!! 
-If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues.
+?????? Screen  Shot ?????? 
+
+Note !!!
+	If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at <a href="https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues" target="_blank">Enabling media streaming for specific queues
+</a>  https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues.
 
 # Results
 Congratulations, In this lab, you learned how the AI Assistant enhances the live agent experience. By providing AI Agent Transfer Summaries and Call Drop Summaries, the assistant gives agents instant context. Paired with Real-time Transcriptions, these features ensure agents are always well-informed, leading to more efficient and satisfying customer interactions.
