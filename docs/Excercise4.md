@@ -133,7 +133,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - In Control Hub go to the Flows menu on the left-hand side.
 
-	![Nav](./assets/ExcerciseAssistant_9.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_9.png){ width="200" }
 
 - Search for and select the voice flow you created for the AI Agent exercise.
 
@@ -143,11 +143,11 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Add a Start Media Stream activity node directly after the AgentAnswered event. Make sure the activity is connected to the End Flow Node.
 
-	![Nav](./assets/ExcerciseAssistant_11.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_11.png){ width="600" }
 
 - Validate and Publish the flow. This will enable real-time transcription for every call routed through this flow.
 
-	![Nav](./assets/ExcerciseAssistant_12.png){ width="500" }
+	![Nav](./assets/ExcerciseAssistant_12.png){ width="700" }
 
 - Now, lets test the transcription feature 
 
