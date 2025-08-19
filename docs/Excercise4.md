@@ -161,7 +161,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 Note !!!
 	If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at <a href="https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues" target="_blank">Enabling media streaming for specific queues
-</a>  https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues.
+</a>
 
 # Results
 Congratulations, In this lab, you learned how the AI Assistant enhances the live agent experience. By providing AI Agent Transfer Summaries and Call Drop Summaries, the assistant gives agents instant context. Paired with Real-time Transcriptions, these features ensure agents are always well-informed, leading to more efficient and satisfying customer interactions.
