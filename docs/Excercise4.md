@@ -133,7 +133,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - In Control Hub go to the Flows menu on the left-hand side.
 
-	![Nav](./assets/ExcerciseAssistant_9.png){ width="200" }
+	![Nav](./assets/ExcerciseAssistant_9.png){ width="250" }
 
 - Search for and select the voice flow you created for the AI Agent exercise.
 
