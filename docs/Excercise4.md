@@ -44,7 +44,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Search and Open the layout **Wx1_Desktop_AI_Assistant** and download the file **Wx1_Desktop_AI_Assistant.json**.
 
-	![Nav](./assets/ExcerciseAssistant_8.png){ width="600" }
+	![Nav](./assets/ExcerciseAssistant_8.png){ width="700" }
   
 - Review the file in a text editor. In the Agent > Advanced Header section, you should see the verbiage highlighted in this screenshot
 
@@ -77,13 +77,13 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Ensure the agent is set to the "Available" state.
 
-- Using your cell phone, call the number **+1???????**. 
+- Using your cell phone, call the same number as in previous excercise. 
 
 - After speaking briefly with the AI agent, you can escalate the call to a live agent by saying, **I want to speak to an agent**.
 
 - Switch the agent to '**Available**' state on the Webex Contact Center Agent Desktop and accept the call.
 
-- Observe the AI Assistant summary of your conversation with the agent
+- Observe the AI Assistant summary of your conversation with the agent and all the interactions with the AI agent in the IVR transcripts section. 
 
 ![Nav](./assets/t4s2p2.png){ width="600" }
 ![Nav](./assets/t4s2p3.png){ width="800" }
@@ -100,7 +100,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 ??????? Screen Shot ?????
 
-- This time, continue the conversation with the agent for more than 40 seconds, then end the call from the caller's end.
+- This time, continue the conversation with the agent for more than **40 seconds**, then end the call from the caller's end.
 
 - Now, when you call back and the agent accepts the call, the call drop summary will be generated.
 
@@ -159,9 +159,10 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 ?????? Screen  Shot ?????? 
 
-Note !!!
-	If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at <a href="https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues" target="_blank">Enabling media streaming for specific queues
+!!! Note
+		If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at <a href="https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues" target="_blank">Enabling media streaming for specific queues
 </a>
 
 # Results
+
 Congratulations, In this lab, you learned how the AI Assistant enhances the live agent experience. By providing AI Agent Transfer Summaries and Call Drop Summaries, the assistant gives agents instant context. Paired with Real-time Transcriptions, these features ensure agents are always well-informed, leading to more efficient and satisfying customer interactions.
