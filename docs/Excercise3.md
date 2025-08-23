@@ -70,4 +70,31 @@ Note !!!
 
 - Call the channel number (from the steps above), interact with the Webex AI Agent and order the car and get the order ID. 
 
+- When you interact with the AI agent, you might notice that it quickly concludes the call without taking an order or completing the transaction. 
+
+- This is likely related to the termination delay setting, which may be set for too small a window.
+
+- To fix this, follow these steps:
+
+- In the Flow section of the voice flow you created, select the VirtualAgentV2 node.
+
+![Nav](./assets/t4s1p12.png){ width="500" }
+
+- Under Advanced Settings, you'll see the timeout is set to 15 seconds.
+
+![Nav](./assets/t4s1p13.png){ width="500" }
+
+- Increase this timeout to 30 seconds and publish the flow.
+
+Note !!!
+ Detailed instructions on how to edit and republish flows have not been provided, as these steps were performed earlier in the lab.
+
+- Retest the flow by calling in again.
+
+- You can also go to the AI Agent Studio, select the AI agent you created, and in its Profile, change it to **'Webex AI ProUS 1.0'**. and publish the agent. 
+
+![Nav](./assets/t4s1p14.png){ width="500" }
+
+- Notice the difference in how the agent interacts while capturing and placing the order.
+
 Congratulations! You have completed this task and the lab!
