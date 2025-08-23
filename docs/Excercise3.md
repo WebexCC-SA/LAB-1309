@@ -45,18 +45,18 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 
 ![Nav](./assets/t4s1p8.png){ width="1000" }
 
-Note !!!
-	Instead of Jess as the voice, you can choose different voice options like **'en-US-Maria'** and **'en-US-Henry'**. Supported voice languages for AI agents can be checked via <a href="https://help.webex.com/en-us/article/pdef2d/Supported-languages-and-voices-for-AI-agents" target="_blank">Supported Languages and Voices for AI agents.
-	
+!!! Note
+	    Instead of Jess as the voice, you can choose different voice options like **'en-US-Maria'** and **'en-US-Henry'**. Supported voice languages for AI agents can be checked via <a href="https://help.webex.com/en-us/article/pdef2d/Supported-languages-and-voices-for-AI-agents" target="_blank">Supported Languages and Voices for AI agents.
 
 - Turn Flow Validation **'On'** by clicking the **'Validation'** button at the bottom of the page to publish the flow. Once validation is complete, click **'Publish Flow'** and then **'Publish Flow'** again in the next dialog box (**Latest** version label is selected automatically).
 
 ![Nav](./assets/t4s1p9.png){ width="400" }
 
 - Navigate to **'Channels'** menu in the Webex Contact Center configuration.
+
 - Open **'WebexOne_AI_EntryPoint_N'** (_where **'N'** is your lab user number), associate your created flow under **'Routing Flow'** (note down the **'Support Number'** associated with this channel - it will be needed later in this lab for testing), and click **'Save'**.
 
-![Nav](./assets/t4s1p10.png){ width="500" }
+![Nav](./assets/t4s1p10.png){ width="800" }
 ![Nav](./assets/t4s1p11.png){ width="1000" }
 
 
@@ -93,7 +93,7 @@ Note !!!
 
 - You can also go to the AI Agent Studio, select the AI agent you created, and in its Profile, change it to **'Webex AI ProUS 1.0'**. and publish the agent. 
 
-![Nav](./assets/t4s1p14.png){ width="500" }
+![Nav](./assets/t4s1p14.png){ width="700" }
 
 - Notice the difference in how the agent interacts while capturing and placing the order.
 
