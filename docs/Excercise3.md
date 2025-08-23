@@ -33,11 +33,11 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 ![Nav](./assets/t4s1p4.png){ width="500" }
 ![Nav](./assets/t4s1p5.png){ width="500" }
 
-- Once the flow loads, click on the **'VirtualAgentV2'** node and select the Webex AI Agent (created in **Task 1**) under **'Virtual Agent'**.
+- Once the flow loads, click on the **'VirtualAgentV2'** node and select the Webex AI Agent (created in **Excercise 1**) under **'Virtual Agent'**.
 
 ![Nav](./assets/t4s1p6.png){ width="1000" }
 
-- Click on the **'QueueContact'** node and select **'AIQueueN'** (_where **'N'** is your lab user number, e.g., labuser**7**@wxccciscolive.wbx.ai_).
+- Click on the **'QueueContact'** node and select **'WebexOne_AIQueue_<n>'** (where **'N'** is your lab user number).
 
 ![Nav](./assets/t4s1p7.png){ width="1000" }
 
@@ -45,31 +45,29 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 
 ![Nav](./assets/t4s1p8.png){ width="1000" }
 
+Note !!!
+	Instead of Jess as the voice, you can choose different voice options like **'en-US-Maria'** and **'en-US-Henry'**. Supported voice languages for AI agents can be checked via <a href="https://help.webex.com/en-us/article/pdef2d/Supported-languages-and-voices-for-AI-agents" target="_blank">Supported Languages and Voices for AI agents.
+	
+
 - Turn Flow Validation **'On'** by clicking the **'Validation'** button at the bottom of the page to publish the flow. Once validation is complete, click **'Publish Flow'** and then **'Publish Flow'** again in the next dialog box (**Latest** version label is selected automatically).
 
 ![Nav](./assets/t4s1p9.png){ width="400" }
 
 - Navigate to **'Channels'** menu in the Webex Contact Center configuration.
-- Open **'AIChannelN'** (_where **'N'** is your lab user number, e.g., labuser**7**@wxccciscolive.wbx.ai_), associate your created flow under **'Routing Flow'** (note down the **'Support Number'** associated with this channel - it will be needed later in this lab for testing), and click **'Save'**.
+- Open **'WebexOne_AI_EntryPoint_N'** (_where **'N'** is your lab user number), associate your created flow under **'Routing Flow'** (note down the **'Support Number'** associated with this channel - it will be needed later in this lab for testing), and click **'Save'**.
 
-![Nav](./assets/t4s1p10.png){ width="600" }
+![Nav](./assets/t4s1p10.png){ width="500" }
 ![Nav](./assets/t4s1p11.png){ width="1000" }
 
 
 ## **Section 2 - Verifying Voice Flow, Agent Handover and AI Assistant Summary**
 
 - Log in to the Webex Contact Center Agent Desktop:
-	- For the phone number, select **'Extension'** and enter the extension in the format 100**N** (where **'N'** is your lab user number, e.g., _labuser**7**@wxccciscolive.wbx.ai_)':
-	- For the team use **AITeamN** (where **'N'** is your lab user number, e.g., _labuser**7**@wxccciscolive.wbx.ai_)'.
+	- For the phone number, select **'Desktop'** 
+	- For the team use **WebexOne_Team_N** (where **'N'** is your lab user number)'.
 
-![Nav](./assets/t4s2p1.png){ width="400" }
+???????<<<ScreenShot>>>???????????
 
-- Call the channel number (from the steps above), interact with the Webex AI Agent, and request a transfer to a human at the end.
-- Switch to the **'Available'** state on the Webex Contact Center Agent Desktop and accept the call.
-- Observe the AI Assistant summary of your conversation with the agent.
+- Call the channel number (from the steps above), interact with the Webex AI Agent and order the car and get the order ID. 
 
-![Nav](./assets/t4s2p2.png){ width="600" }
-![Nav](./assets/t4s2p3.png){ width="1200" }
-
-- End the call.
-- Congratulations! You have completed this task and the lab!
+Congratulations! You have completed this task and the lab!
