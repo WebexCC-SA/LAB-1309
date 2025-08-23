@@ -56,7 +56,7 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 
 - Open **'WebexOne_AI_EntryPoint_N'** (_where **'N'** is your lab user number), associate your created flow under **'Routing Flow'** (note down the **'Support Number'** associated with this channel - it will be needed later in this lab for testing), and click **'Save'**.
 
-![Nav](./assets/t4s1p10.png){ width="800" }
+![Nav](./assets/t4s1p10.png){ width="900" }
 ![Nav](./assets/t4s1p11.png){ width="1000" }
 
 
@@ -86,8 +86,8 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 
 - Increase this timeout to 30 seconds and publish the flow.
 
-Note !!!
- Detailed instructions on how to edit and republish flows have not been provided, as these steps were performed earlier in the lab.
+!!! Note 
+		Detailed instructions on how to edit and republish flows have not been provided, as these steps were performed earlier in the lab.
 
 - Retest the flow by calling in again.
 
