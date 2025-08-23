@@ -159,9 +159,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 ?????? Screen  Shot ?????? 
 
-!!! Note
-		If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at <a href="https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues" target="_blank">Enabling media streaming for specific queues
-</a>
+- If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at <a href="https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues" target="_blank">Enabling media streaming for specific queues </a>
 
 # Results
 
