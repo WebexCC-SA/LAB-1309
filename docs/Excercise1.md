@@ -69,7 +69,7 @@ In this lab, participants will learn to:
   
 - For this lab, let's add FAQ content specific to Cisco Support service for collaboration. Download the PDF from the link below.
  
-  [Cisco Support Services for Collaboration FAQ](https://github.com/anujbhatiaminer82/Test2/blob/19c17379ca564d164bde1bf583fcf0a291d51e72/support-services-for-collaboration-faq.pdf)
+  [Cisco Support Services for Collaboration FAQ](https://github.com/anujbhatiaminer82/Test2/blob/19c17379ca564d164bde1bf583fcf0a291d51e72/support-services-for-collaboration-faq.pdf "download")
   
 
 - Drag and drop the PDF file to the knowledge base. Alternatively, click Add File to add a file.
