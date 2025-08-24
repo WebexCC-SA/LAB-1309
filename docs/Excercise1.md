@@ -77,7 +77,8 @@ In this lab, participants will learn to:
       ![Nav](./assets/Excercise4_6.png){ width="500" }
 
 !!! Note
-        The system supports the following file formats: PDF, DOC, DOCX, DOCX, TXT, XLSX, XLS, and CSV. The size of each file must not exceed 2 MB.
+        The system supports following file formats: PDF, DOC, DOCX, DOCX, TXT, XLSX, XLS and CSV. 
+        TXT file size cannot exceed 2 MB. All other file size cannot exceed 10MB.
 
 - After adding the file, bring up the browser developer tool (Shortcut: Press F12 Key). 
 
@@ -110,7 +111,7 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_10.png){ width="600" }
 
-- On the Create an AI Agent screen, click Start from scratch tile followed by Next button (bottom of the screen)
+- On the Create an AI Agent screen, click **Start from scratch** tile followed by Next button (bottom of the screen)
 
       ![Nav](./assets/Excercise4_11.png){ width="300" }
 
@@ -126,6 +127,9 @@ In this lab, participants will learn to:
     - Click Create button at the bottom of the screen.
 
       ![Nav](./assets/Excercise4_14.png){ width="500" }
+
+!!! Note
+        Create button is grayed out until all fields are populated.      
   
 - The autonomous AI agent for answering questions is successfully created and is now available on the Dashboard.
 
@@ -136,8 +140,8 @@ In this lab, participants will learn to:
 - These are the fields that control these aspects:
     - URL for agent profile image: The default URL from which the system fetches the AI agent's logo or image.
     - AI engine: The chosen AI engine is displayed.
-      !!! Note
-              By default, Webex AI Agent Pro 1.0 (with GPT 4.0) is the only available AI engine.
+!!! Note
+      By default, Webex AI Pro 1.0 (with GPT 4.0) is the only available AI engine.
     - Welcome message: The default welcome message that the AI agent uses to start the interaction. 
 
 - Lets map the Agent with the Knowledge base that was created.
@@ -146,17 +150,17 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_23.png){ width="500" }
 
-- Click Save changes and publish to make the AI agent live.
+- Click **Save changes** followed by **Publish** to make the AI agent live.
 
       ![Nav](./assets/Excercise4_24.png){ width="500" }
 
 ## **Section 2 : Test Webex AI Agent**
 
-- Now it's time to test the bot. One way to check if the bot is constructing and answering queries correctly is to use the Preview option.
+- Now it's time to test the agent. Quick way to check if the agent is constructing and answering queries correctly is to use the Preview option.
 
       ![Nav](./assets/Excercise4_16.png){ width="300" }
 
-- Click the "Preview" button , a chat window appears in the bottom right corner of the pane where questions can be entered. Choose "start a Chat" option
+- Click the "Preview" button , a chat window appears in the bottom right corner of the pane where questions can be entered. Choose **Start a chat** option
 
       ![Nav](./assets/Excercise4_17.png){ width="300" }
 
