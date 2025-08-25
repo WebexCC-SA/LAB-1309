@@ -200,8 +200,9 @@ Provide orderid after a successful order.
 
 - The issue lies in the method selected to create the record. PUT is generally used for updating or replacing existing content, but for creating a new record, the correct method is POST.
 
-- To correct this, select the Edit option in the flow. In the HTTP Request Node, change the Method from PUT to POST.
+- To correct this, select the Edit option in the flow. Then double click on the HTTP Request Node and change the Method from PUT to POST.
 
+![Nav](./assets/t2s3ap13_0.png){ width="400" }
 ![Nav](./assets/t2s3ap13.png){ width="900" }
 
 - Save the flow and make it Live.
