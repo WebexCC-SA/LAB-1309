@@ -135,16 +135,17 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_15.png){ width="800" }
 
-- The Profile tab on the Agent Configuration page, after creation, allows you to change the agent's image, the AI engine it uses, its goal, and the welcome message displayed when the bot is initiated.  
+- The Profile tab on the Agent Configuration page, after creation, allows you to change the agent's image, the AI engine it uses, its goal, and the welcome message displayed when the AI agent is launched.  
 
 - These are the fields that control these aspects:
     - URL for agent profile image: The default URL from which the system fetches the AI agent's logo or image.
     - AI engine: The chosen AI engine is displayed.
-!!! Note
-      By default, Webex AI Pro 1.0 (with GPT 4.0) is the only available AI engine.
     - Welcome message: The default welcome message that the AI agent uses to start the interaction. 
 
-- Lets map the Agent with the Knowledge base that was created.
+!!! Note
+      By default, Webex AI Pro 1.0 (with GPT 4.0) is the only available AI engine.
+
+- Lets map the AI agent with the Knowledge base that was created.
   
 - Navigate to Configurations > Knowledge tab and choose the required knowledge base from the drop-down list.
 
@@ -156,7 +157,7 @@ In this lab, participants will learn to:
 
 ## **Section 2 : Test Webex AI Agent**
 
-- Now it's time to test the agent. Quick way to check if the agent is constructing and answering queries correctly is to use the Preview option.
+- Now it's time to test the AI agent. Quick way to check if the agent is constructing and answering queries correctly is to use the Preview option.
 
       ![Nav](./assets/Excercise4_16.png){ width="300" }
 
@@ -166,11 +167,11 @@ In this lab, participants will learn to:
 
 - To test in this example, we pose the question "What warranty comes with the vehicle?"
   
-- The response provided was accurate and consistent with the knowledge base created for this bot
+- The response provided was accurate and consistent with the knowledge base created for this AI agent.
 
       ![Nav](./assets/Excercise4_18.png){ width="500" }
 
-- The instruction section of the bot helps refine it to be more sophisticated and behave in the manner that the business dictates.
+- The instruction section of the AI agent helps refine it to be more sophisticated and behave in the manner that the business dictates.
 
       ![Nav](./assets/Excercise4_18_2.png){ width="500" }
 
