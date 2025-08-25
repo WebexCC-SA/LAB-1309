@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-This lab will give you an introduction to ...
+This lab will introduce AI Agent and Assistant features of the Webex Contact Center. 
 
 ## Disclaimer
 
