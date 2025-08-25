@@ -202,12 +202,11 @@ Provide orderid after a successful order.
 
 - To correct this, select the Edit option in the flow. Then double click on the HTTP Request Node and change the Method from PUT to POST.
 
-![Nav](./assets/t2s3ap13_0.png){ width="400" }
-![Nav](./assets/t2s3ap13.png){ width="900" }
+![Nav](./assets/t2s3ap13_0.png){ width="300" } ![Nav](./assets/t2s3ap13.png){ width="900" }
 
 - Save the flow and make it Live.
 
-- Create a car order again from Preview chat, and the execution should now be successful.
+- Create a car order again from Preview chat, and the execution should now be successful with AI agent returning an Order ID.
 
 - You can also access the datastore where these orders are stored and updated by entering the following URL into your browser:
    https://68085a3f942707d722ddf6a8.mockapi.io/api/cars
