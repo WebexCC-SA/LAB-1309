@@ -179,7 +179,7 @@ In this lab, participants will learn to:
 
     - Tone and Demeanor: Be polite, as the client is important.
     - Role Definition: Answer the question in no more than 50 words.
-    - Response Guidelines: Thank the user for their business and say goodbye.
+    - Response Guidelines: Thank the user for their interest and business.
 
 - Add these guidelines to the Instructions section, save, and publish the changes.
 
