@@ -22,7 +22,7 @@ In this lab, audience will learn to explore and set up Autonomous Webex AI Agent
 
 ![Nav](./assets/t2s1p1.png){ width="300" }
 
-- Create a new service by clicking **'Create New Service'** and providing a name (i.e. Webexone_carorderservice_Name_).
+- Create a new service by clicking **'Create New Service'** and providing a name **Webexone_carorderservice_YourName_**.
 
 ![Nav](./assets/t2s1p2.png){ width=800" }
 
@@ -140,7 +140,7 @@ Provide orderid after a successful order.
 ![Nav](./assets/t2s1ap4.png){ width="600" }
 ![Nav](./assets/t2s1ap5.png){ width="1000" }
 
-- Click **'Add'**.
+- Click **'Add'** and **Publish** the changes. 
 
 ![Nav](./assets/t2s1ap6.png){ width="200" }
 

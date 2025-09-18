@@ -67,12 +67,12 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_4.png){ width="500" }
   
-- For this lab, let's add FAQ content specific to Cisco Support service for collaboration. Download the PDF from the link below.
+- For this lab, let's add FAQ content specific to buying a cae. Download the word doc from the link below.
  
-  [Cisco Support Services for Collaboration FAQ](https://github.com/anujbhatiaminer82/Test2/blob/19c17379ca564d164bde1bf583fcf0a291d51e72/support-services-for-collaboration-faq.pdf "download")
+  [Buying Car FAQ](https://github.com/anujbhatiaminer82/Test2/blob/main/Buyingcarfaq.docx "download")
   
 
-- Drag and drop the PDF file to the knowledge base. Alternatively, click Add File to add a file.
+- Drag and drop the file to the knowledge base. Alternatively, click Add File to add a file. **DO Not Click on PRocess Button Yet**
 
       ![Nav](./assets/Excercise4_6.png){ width="500" }
 
@@ -120,10 +120,10 @@ In this lab, participants will learn to:
       ![Nav](./assets/Excercise4_12.png){ width="300" }
 
 - On the 'Add the essential details' specify the following details:
-    - Agent name: Enter the name of the AI agent.
+    - Agent name: Enter the name of the AI agent susch as **WebexOne_<yourname>**
     - System ID: A system-generated unique identifier. This field is editable.
     - AI engine: Select the required AI engine from the drop-down list  (default its Webex AI Pro 1.0 ).
-    - Agent's goal: Provide a brief description of the AI agent's goal which in this case is to answer queries hence the prompt "Answer Support Questions". 
+    - Agent's goal: Provide a brief description of the AI agent's goal which in this case is to answer queries hence the prompt **"Answer queries about cars"**. 
     - Click Create button at the bottom of the screen.
 
       ![Nav](./assets/Excercise4_14.png){ width="500" }

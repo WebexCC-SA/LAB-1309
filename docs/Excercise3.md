@@ -66,11 +66,17 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 	- For the phone number, select **'Desktop'** 
 	- For the team use **WebexOne_Team_N** (where **'N'** is your lab user number)'.
 
-???????<<<ScreenShot>>>???????????
+![Nav](./assets/t4s1p11.1.png){ width="500" }
 
 - Call the channel number (from the steps above), interact with the Webex AI Agent and order the car and get the order ID. 
 
-- When you interact with the AI agent, you might notice that it quickly concludes the call without taking an order or completing the transaction. 
+- When you interact with the AI agent, you might notice a couple of issues.
+
+- First, the bot may not be able to answer. This could be due to the agent's AI engine. If you notice this issue, you can change the AI engine to Webex AI Pro-Us 1.0 in the configured AI Agent Profile and test the call again. 
+
+![Nav](./assets/t4s1p14.png){ width="700" }
+
+- Second you may notice that the Agent may quickly quickly conclude the call without taking an order or completing the transaction. 
 
 - This is likely related to the termination delay setting, which may be set for too small a window.
 
@@ -89,12 +95,6 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 !!! Note 
 		Detailed instructions on how to edit and republish flows have not been provided, as these steps were performed earlier in the lab.
 
-- Retest the flow by calling in again.
-
-- You can also go to the AI Agent Studio, select the AI agent you created, and in its Profile, change it to **'Webex AI ProUS 1.0'**. and publish the agent. 
-
-![Nav](./assets/t4s1p14.png){ width="700" }
-
-- Notice the difference in how the agent interacts while capturing and placing the order.
+- Retest the flow by calling in again and place a successfull order. 
 
 Congratulations! You have completed this task and the lab!
