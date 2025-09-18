@@ -157,7 +157,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Accept the call and observe the conversation being converted into real-time transcripts in the Transcripts gadget.
 
-	![Nav](./assets/t4s2p6.png){ width="400" } 
+	![Nav](./assets/t4s2p6.png){ width="700" } 
 
 - If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at <a href="https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues" target="_blank">Enabling media streaming for specific queues </a>
 
