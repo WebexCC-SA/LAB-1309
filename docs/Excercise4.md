@@ -52,7 +52,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - To have a desktop layout reflected for agents, it must be mapped to their teams.
 
-- From User Management section ossf Control Hub, select Teams and search for your team **WebexOne_Team_<num>** you want to update.
+- From User Management section of Control Hub, select Teams and search for your team **WebexOne_Team_<num>** you want to update.
 
 	![Nav](./assets/ExcerciseAssistant_4.png){ width="200" }
 
@@ -67,7 +67,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 	
 - Please select **Desktop** as the telephony option and set the Team as **WebexOne_Team_<num>**
 
-??????? Screen Shot ?????
+![Nav](./assets/t4s1p11.1.png){ width="500" }
 
 - This will load the layout as configured above.
 
@@ -88,7 +88,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 ![Nav](./assets/t4s2p2.png){ width="600" }
 ![Nav](./assets/t4s2p3.png){ width="800" }
 
-- Have a brief conversation with the agent, ensure it's not more than 10 or 15 seconds long, and end the call from the cell phone. 
+- Have a brief conversation with the agent, ensure it's not more than **10 or 15** seconds long, and end the call from the cell phone. 
 
 ## **Section 2: Call Drop Summary**
 
@@ -98,13 +98,13 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - You will notice that the summary is not generated when the call is presented to the agent and they answer it.
 
-??????? Screen Shot ?????
+![Nav](./assets/t4s2p4.png){ width="600" }
 
 - This time, continue the conversation with the agent for more than **40 seconds**, then end the call from the caller's end.
 
 - Now, when you call back and the agent accepts the call, the call drop summary will be generated.
 
-??????? Screen Shot ?????
+![Nav](./assets/t4s2p5.png){ width="600" }
 
 - The reason this works is that the call has met the following criteria:
 
@@ -157,7 +157,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Accept the call and observe the conversation being converted into real-time transcripts in the Transcripts gadget.
 
-?????? Screen  Shot ?????? 
+	![Nav](./assets/t4s2p6.png){ width="400" } 
 
 - If your business requires enabling real-time streaming for specific queues only, you can follow the instructions in the provided document at <a href="https://help.webex.com/en-us/article/n5jhgdi/Enabling-media-streaming-for-specific-queues" target="_blank">Enabling media streaming for specific queues </a>
 
