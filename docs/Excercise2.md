@@ -200,13 +200,15 @@ Provide orderid after a successful order.
 
 - The issue lies in the method selected to create the record. PUT is generally used for updating or replacing existing content, but for creating a new record, the correct method is POST.
 
-- To correct this, select the Edit option in the flow. In the HTTP Request Node, change the Method from PUT to POST.
+- To correct this, select the Edit option in the flow. Then double click on the HTTP Request Node and change the Method from PUT to POST.
 
-![Nav](./assets/t2s3ap13.png){ width="900" }
+![Nav](./assets/t2s3ap13.png){ width="1200" }
 
 - Save the flow and make it Live.
 
-- Create a car order again from Preview chat, and the execution should now be successful.
+- Create a car order again from Preview chat, and the execution should now be successful with AI agent returning an Order ID.
+
+![Nav](./assets/t2s3ap15.png){ width="400" }
 
 - You can also access the datastore where these orders are stored and updated by entering the following URL into your browser:
    https://68085a3f942707d722ddf6a8.mockapi.io/api/cars
