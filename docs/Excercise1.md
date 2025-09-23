@@ -1,4 +1,4 @@
-Excercise 1 - Autonomous AI Agents with Knowledge Bases
+## Excercise 1 - Build Autonomous AI Agents with Knowledge Bases
 
 
 
@@ -7,8 +7,8 @@ Please use the following credentials to connect to Control Hub and configure Web
 | <!-- -->         | <!-- -->         |
 | ---------------- | ---------------- |
 | `Control Hub URL`            | <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> |
-| `Username`       | wxccemealabs+admin**ID**@gmail.com  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
-| `Password`       | ciscoliveAMER25! |
+| `Username`       | labuser**ID**@wx1.wbx.ai  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
+| `Password`       | webexONE1! |
 
 
 **AI Agents Overview**
@@ -30,7 +30,7 @@ Furthermore, AI Agents can be easily scaled to accommodate high volumes of custo
 
 To ensure the WxCC Tenant can be enabled for this feature and that the feature can be used effectively, the following requirements must be adhered to:
 
-- Webex Contact Center tenant with Flex 3 subscription and A-FLEX-AI-AGT SKU
+- Webex Contact Center tenant with **Flex 3** subscription and **A-FLEX-AI-AGT SKU**
 - Webex Connect capability on the tenant.
 
 ## **Objective**
@@ -72,7 +72,9 @@ In this lab, participants will learn to:
   [Buying Car FAQ](https://github.com/anujbhatiaminer82/Test2/blob/main/Buyingcarfaq.docx "download")
   
 
-- Drag and drop the file to the knowledge base. Alternatively, click Add File to add a file. **DO Not Click on PRocess Button Yet**
+- Drag and drop the file to the knowledge base. Alternatively, click Add File to add a file. 
+
+- **DO Not Click on Process Button Yet**
 
       ![Nav](./assets/Excercise4_6.png){ width="500" }
 
@@ -94,16 +96,16 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_8.png){ width="500" }
 
-- The browser logs will show a 'success' status, along with the 'kb_id', 'kb_category_id', and 'kb_documented_id'. 
+- The browser logs will show a 'success' status, along with the **'kb_id'**, **'kb_category_id'**, and **'kb_documented_id'**. 
 
       ![Nav](./assets/Excercise4_8_1.png){ width="700" }
 
 !!! Note
        This is essential information for Cisco TAC team to analyze and troubleshoot any issues that may have caused the upload to fail. 
   
-- Navigate to the Information tab to view and track the details of the files you uploaded and the documents you created , KB ID is also present on the top left corner. 
+- Navigate to the Information tab to view and track the details of the files you uploaded and the documents you created , **KB ID** is also present on the top left corner. 
 
-      ![Nav](./assets/Excercise4_9.png){ width="500" }
+      ![Nav](./assets/Excercise4_9.png){ width="700" }
 
 - Now, it's time to create the AI agent itself.
 
@@ -120,10 +122,10 @@ In this lab, participants will learn to:
       ![Nav](./assets/Excercise4_12.png){ width="300" }
 
 - On the 'Add the essential details' specify the following details:
-    - Agent name: Enter the name of the AI agent susch as **WebexOne_<yourname>**
-    - System ID: A system-generated unique identifier. This field is editable.
-    - AI engine: Select the required AI engine from the drop-down list  (default its Webex AI Pro 1.0 ).
-    - Agent's goal: Provide a brief description of the AI agent's goal which in this case is to answer queries hence the prompt **"Answer queries about cars"**. 
+    - **Agent name**: Enter the name of the AI agent susch as **WebexOne_yourname**
+    - **System ID**: A system-generated unique identifier. This field is editable.
+    - **AI engine**: Select the required AI engine from the drop-down list  (default its Webex AI Pro 1.0 ).
+    - **Agent's goal**: Provide a brief description of the AI agent's goal which in this case is to answer queries hence the prompt **"Answer queries about cars"**. 
     - Click Create button at the bottom of the screen.
 
       ![Nav](./assets/Excercise4_14.png){ width="500" }
@@ -138,16 +140,16 @@ In this lab, participants will learn to:
 - The Profile tab on the Agent Configuration page, after creation, allows you to change the agent's image, the AI engine it uses, its goal, and the welcome message displayed when the AI agent is launched.  
 
 - These are the fields that control these aspects:
-    - URL for agent profile image: The default URL from which the system fetches the AI agent's logo or image.
-    - AI engine: The chosen AI engine is displayed.
-    - Welcome message: The default welcome message that the AI agent uses to start the interaction. 
+    - **URL for agent profile image**: The default URL from which the system fetches the AI agent's logo or image.
+    - **AI engine**: The chosen AI engine is displayed.
+    - **Welcome message**: The default welcome message that the AI agent uses to start the interaction. 
 
 !!! Note
-      By default, Webex AI Pro 1.0 (with GPT 4.0) is the only available AI engine.
+      By default, Webex AI Pro 1.0 (with GPT 4.0) is the available AI engine.
 
 - Lets map the AI agent with the Knowledge base that was created.
   
-- Navigate to Configurations > Knowledge tab and choose the required knowledge base from the drop-down list.
+- Navigate to Configurations > Knowledge tab and choose the configured knowledge base from the drop-down list.
 
       ![Nav](./assets/Excercise4_23.png){ width="500" }
 
@@ -165,7 +167,7 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_17.png){ width="300" }
 
-- To test in this example, we pose the question "What warranty comes with the vehicle?"
+- To test in this example, we pose the question **"What warranty comes with the vehicle?"**
   
 - The response provided was accurate and consistent with the knowledge base created for this AI agent.
 
@@ -177,15 +179,15 @@ In this lab, participants will learn to:
 
 - In this example, let's work on these three areas of the bot with the following instructions:
 
-    - Tone and Demeanor: Be polite, as the client is important.
-    - Role Definition: Answer the question in no more than 50 words.
-    - Response Guidelines: Thank the user for their interest and business.
+    - **Tone and Demeanor**: Be polite, as the client is important.
+    - **Role Definition**: Answer the question in no more than 50 words.
+    - **Response Guidelines**: Thank the user for their interest and business.
 
 - Add these guidelines to the Instructions section, save, and publish the changes.
 
       ![Nav](./assets/Excercise4_18_1.png){ width="500" }
 
-- To test, pose the same question: "What warranty comes with the vehicle?"
+- To test, pose the same question: **"What warranty comes with the vehicle?"**
 
 - As the Role Definition dictated answering within 50 words, you will see the answer within that limit.
 
@@ -203,9 +205,9 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_20.png){ width="500" }
 
-    - Channels: The channel where the interaction took place.
-    - Session ID: The unique room ID or session ID for a conversation.
-    - Room Metadata: Additional information about the room.
+    - **Channels**: The channel where the interaction took place.
+    - **Session ID**: The unique room ID or session ID for a conversation.
+    - **Room Metadata**: Additional information about the room.
 
 - Click on an individual row in the sessions table for a detailed view of that session.
 

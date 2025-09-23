@@ -215,4 +215,4 @@ Provide orderid after a successful order.
 
 ![Nav](./assets/t2s3ap3.png){ width="800" }
 
-Congratulations! You have successfully completed this task and the lab! If you'd like, you can also explore Bonus section 4 to dive and see how the orders can be modified. 
+Congratulations! You have successfully completed this task and the lab! If you'd like, you can also explore Bonus excercise 5 to dive and see how the orders can be modified. 
