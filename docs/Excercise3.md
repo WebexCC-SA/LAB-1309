@@ -6,8 +6,8 @@ Please use the following credentials to connect to Control Hub and configure Web
 | <!-- -->         | <!-- -->         |
 | ---------------- | ---------------- |
 | `Control Hub URL`            | <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> |
-| `Username`       | wxccemealabs+admin**ID**@gmail.com  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
-| `Password`       | ciscoliveAMER25! |
+| `Username`       | labuser**ID**@wx1.wbx.ai  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
+| `Password`       | webexONE1! |
 
 
 ## **Objective**
@@ -37,7 +37,7 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 
 ![Nav](./assets/t4s1p6.png){ width="1000" }
 
-- Click on the **'QueueContact'** node and select **'WebexOne_AIQueue_<n>'** (where **'N'** is your lab user number).
+- Click on the **'QueueContact'** node and select **'WebexOne_AIQueue_N'** (where **'N'** is your lab user number).
 
 ![Nav](./assets/t4s1p7.png){ width="1000" }
 

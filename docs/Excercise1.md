@@ -61,7 +61,7 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_3.png){ width="300" }
 
-- On the Create Knowledge Base page, enter the knowledge base name as WebexOne_YourName.
+- On the Create Knowledge Base page, enter the knowledge base name as **WebexOne_KB_YourName**.
 
 - Click Create. The system creates a knowledge base with the specified name.
 
