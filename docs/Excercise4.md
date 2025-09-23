@@ -5,8 +5,8 @@ Please use the following credentials to connect to Control Hub and configure Web
 | <!-- -->         | <!-- -->         |
 | ---------------- | ---------------- |
 | `Control Hub URL`            | <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> |
-| `Username`       | wxccemealabs+admin**ID**@gmail.com  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
-| `Password`       | ciscoliveAMER25! |
+| `Username`       | labuser**ID**@wx1.wbx.ai  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
+| `Password`       | webexONE1! |
 
 ## **Objective**
 
@@ -30,7 +30,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 	![Nav](./assets/ExcerciseAssistant_1.png){ width="500" }
 
-- Ensure that the "Call Drop Summary" , "Virtual Agent Transfer Summary" & "Real Time Transcripts"  toggle is enabled.
+- Ensure that the **"Call Drop Summary"** , **"Virtual Agent Transfer Summary"** & **"Real Time Transcripts"**  toggle is enabled.
 
 	![Nav](./assets/ExcerciseAssistant_2.png){ width="600" }
 
@@ -38,7 +38,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - To accomplish this, the agent's desktop layout must include the "ai-assistant" JSON string in the Agent > Advanced Header section
 
-- You can review this in Control Hub by navigating to "Desktop Layouts" within the "Desktop Experience" section of the Contact Center services.
+- You can review this in Control Hub by navigating to **"Desktop Layouts"** within the **"Desktop Experience"** section of the Contact Center services.
 
 	![Nav](./assets/ExcerciseAssistant_3.png){ width="550" }
 
@@ -46,13 +46,15 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 	![Nav](./assets/ExcerciseAssistant_8.png){ width="700" }
   
-- Review the file in a text editor. In the Agent > Advanced Header section, you should see the verbiage highlighted in this screenshot
+- Review the file in a text editor. 
+
+- In the **Agent** > **Advanced Header section** , you should see the verbiage highlighted in this screenshot
 
 	![Nav](./assets/ExcerciseAssistant_7.png){ width="500" }
 
 - To have a desktop layout reflected for agents, it must be mapped to their teams.
 
-- From User Management section of Control Hub, select Teams and search for your team **WebexOne_Team_<num>** you want to update.
+- From User Management section of Control Hub, select Teams and search for your team **WebexOne_Team_num** you want to update.
 
 	![Nav](./assets/ExcerciseAssistant_4.png){ width="200" }
 
@@ -65,7 +67,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
   	- Username: `Contact the lab proctor if information is unavailable.`  
   	- Password: `Contact the lab proctor if information is unavailable.`
 	
-- Please select **Desktop** as the telephony option and set the Team as **WebexOne_Team_<num>**
+- Please select **Desktop** as the telephony option and set the Team as **WebexOne_Team_num**
 
 ![Nav](./assets/t4s1p11.1.png){ width="500" }
 
@@ -75,7 +77,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 	![Nav](./assets/ExcerciseAssistant_6.png){ width="500" }
 
-- Ensure the agent is set to the "Available" state.
+- Ensure the agent is set to the **"Available"** state.
 
 - Using your cell phone, call the same number as in previous excercise. 
 
@@ -85,8 +87,8 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - Observe the AI Assistant summary of your conversation with the agent and all the interactions with the AI agent in the IVR transcripts section. 
 
-![Nav](./assets/t4s2p2.png){ width="600" }
-![Nav](./assets/t4s2p3.png){ width="800" }
+![Nav](./assets/t4s2p2.png){ width="500" }
+![Nav](./assets/t4s2p3.png){ width="700" }
 
 - Have a brief conversation with the agent, ensure it's not more than **10 or 15** seconds long, and end the call from the cell phone. 
 
@@ -115,7 +117,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 - More details can be reviewed in this section <a href="https://help.webex.com/article/ndt475w" target="_blank">Frequently Asked Questions (FAQs)</a> 
 
-## **Section 3: Live Transcripts**
+## **Section 3: Real Time Transcription**
 
 - Real-time transcriptions feature allows agents to access real-time conversation with the caller on their Agent Desktop, enabling them to follow conversations more accurately and respond effectively.
 
@@ -123,7 +125,7 @@ Building on previous labs that showcased how Webex AI Agents assist customers wi
 
 	![Nav](./assets/ExcerciseAssistant_2.png){ width="600" }
 
-- This is because, in addition to the tenant-level settings, a "Media Stream" activity must be triggered directly after the agent answers the call.
+- This is because, in addition to the tenant-level settings, a **"Media Stream"** activity must be triggered directly after the agent answers the call.
 
 - This can be achieved in a flow in one of two ways:
 	- Enable media stream for all queues in the flow.
