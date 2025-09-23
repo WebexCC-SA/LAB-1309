@@ -94,7 +94,6 @@ nav:
       - Lab 4 - Explore Webex AI Assistant : Excercise4.md
       - Lab 5 - (Bonus) Car Order Actions with Webex AI Agent : Excercise5.md
       - Conclusion: conclusion.md
-  - Topologies: topologies.md
   - How to use this guide:
       - Setting up and using the tool:
         - Initial Setup: howToUse/initialSetup.md

@@ -76,7 +76,7 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 
 ![Nav](./assets/t4s1p14.png){ width="700" }
 
-- Second you may notice that the Agent may quickly quickly conclude the call without taking an order or completing the transaction. 
+- Second you may notice that the Agent may quickly conclude the call without taking an order or completing the transaction. 
 
 - This is likely related to the termination delay setting, which may be set for too small a window.
 
@@ -93,8 +93,9 @@ This exercise will also provide an opportunity to experience the AI Assistant fe
 - Increase this timeout to 30 seconds and publish the flow.
 
 !!! Note 
-		Detailed instructions on how to edit and republish flows have not been provided, as these steps were performed earlier in the lab.
+		Detailed instructions on how to edit and republish flows have not been provided intentionally, as these steps were performed earlier in the lab.
 
 - Retest the flow by calling in again and place a successfull order. 
 
-Congratulations! You have completed this task and the lab!
+Congratulations! 
+- You have completed this task and the lab!

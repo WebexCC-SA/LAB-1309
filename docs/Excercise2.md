@@ -5,8 +5,8 @@ Please use the following credentials to connect to Control Hub and configure Web
 | <!-- -->         | <!-- -->         |
 | ---------------- | ---------------- |
 | `Control Hub URL`            | <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> |
-| `Username`       | wxccemealabs+admin**ID**@gmail.com  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
-| `Password`       | ciscoliveAMER25! |
+| `Username`       | labuser**ID**@wx1.wbx.ai  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
+| `Password`       | webexONE1! |
 
 ## **Objective**
 
@@ -211,8 +211,10 @@ Provide orderid after a successful order.
 ![Nav](./assets/t2s3ap15.png){ width="400" }
 
 - You can also access the datastore where these orders are stored and updated by entering the following URL into your browser:
-   https://68085a3f942707d722ddf6a8.mockapi.io/api/cars
+
+   [Car Orders](https://68085a3f942707d722ddf6a8.mockapi.io/api/cars "download")
 
 ![Nav](./assets/t2s3ap3.png){ width="800" }
 
-Congratulations! You have successfully completed this task and the lab! If you'd like, you can also explore Bonus excercise 5 to dive and see how the orders can be modified. 
+Congratulations! 
+- You have successfully completed this task and the lab! If you'd like, you can also explore Bonus excercise 5 to dive and see how the orders can be modified. 
