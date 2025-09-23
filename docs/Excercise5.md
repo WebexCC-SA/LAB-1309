@@ -1,12 +1,12 @@
-# Excercise 5 - (Bonus) Car Order Actions with Webex AI Agent (Bonus)
+# Excercise 5 - (Bonus) Car Order Actions with Webex AI Agent
 
 Please use the following credentials to connect to Control Hub and configure Webex Contact Center:
 
 | <!-- -->         | <!-- -->         |
 | ---------------- | ---------------- |
 | `Control Hub URL`            | <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> |
-| `Username`       | wxccemealabs+admin**ID**@gmail.com  _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
-| `Password`       | ciscoliveAMER25! |
+| `Username`       | labuser**ID**@wx1.wbx.ai _(where **ID** is your assigned pod number; this ID will be provided by your proctor)_ |
+| `Password`       | webexONE1! |
 
 ## **Steps**
 
