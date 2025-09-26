@@ -1,0 +1,1361 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips ">
+      
+      
+        <meta name="author" content="Anuj Bhatia, D.K. Singh">
+      
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../Excercise2/">
+      
+      
+      <link rel="icon" href="../template_assets/webex75.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Lab 1 - Autonomous AI Agents with Knowledge Bases - LAB-1309: Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips </title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#excercise-1-build-autonomous-ai-agents-with-knowledge-bases" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LAB-1309: Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips " class="md-header__button md-logo" aria-label="LAB-1309: Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips " data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LAB-1309: Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips 
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab 1 - Autonomous AI Agents with Knowledge Bases
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lab
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../howToUse/initialSetup/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  How to use this guide
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LAB-1309: Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips " class="md-nav__button md-logo" aria-label="LAB-1309: Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips " data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    LAB-1309: Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips 
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lab
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lab
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lab 1 - Autonomous AI Agents with Knowledge Bases
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab 1 - Autonomous AI Agents with Knowledge Bases
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-1-create-webex-ai-agent-and-knowledge-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 1 : Create Webex AI Agent and Knowledge Base
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-2-test-webex-ai-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2 : Test Webex AI Agent
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Excercise2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab 2 - Build Autonomous Webex AI Agent Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Excercise3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab 3 - Create and Test Voice Flows for Webex AI Agents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Excercise4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab 4 - Explore Webex AI Assistant
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Excercise5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab 5 - (Bonus) Car Order Actions with Webex AI Agent
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conclusion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    How to use this guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How to use this guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1">
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Setting up and using the tool
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Setting up and using the tool
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToUse/initialSetup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Initial Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToUse/postInitial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using the tool after the initial setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToUse/syncChanges/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Publishing your changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2">
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Styling and Advanced Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Styling and Advanced Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToUse/references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Markdown and Other References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToUse/customFeatures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Custom Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToUse/admonition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Custom Admonitions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="excercise-1-build-autonomous-ai-agents-with-knowledge-bases">Excercise 1 - Build Autonomous AI Agents with Knowledge Bases</h1>
+<p>Please use the following credentials to connect to Control Hub and configure Webex Contact Center:</p>
+<table>
+<thead>
+<tr>
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Control Hub URL</code></td>
+<td><a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a></td>
+</tr>
+<tr>
+<td><code>Username</code></td>
+<td>labuser<strong>ID</strong>@wx1.wbx.ai  <em>(where <strong>ID</strong> is your assigned pod number; this ID will be provided by your proctor)</em></td>
+</tr>
+<tr>
+<td><code>Password</code></td>
+<td>webexONE1!</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AI Agents Overview</strong></p>
+<p>Cisco Webex AI Agents provide automated assistance to customers before they interact with human agents across voice or digital channels. These agents leverage language understanding and contextual awareness within conversations. Residing within the CPaaS ecosystem, administrators can utilize the Webex AI Agent Studio platform to design, create, manage, and deploy these agents to meet customer service and support needs.</p>
+<p>Two primary types of AI Agents are currently available:</p>
+<ul>
+<li>
+<p><strong>Autonomous AI Agents</strong>: These operate independently, making decisions and performing tasks without direct human intervention where the key capabilities include:</p>
+<ul>
+<li>Answering Questions: Accessing and utilizing a knowledge repository to provide informative and accurate responses to user queries.</li>
+<li>Performing Actions: Automating time-consuming or repetitive tasks by making choices based on information and predefined rules.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scripted AI Agents</strong>: These deliver precise and timely responses to customer inquiries in real-time. They execute tasks based on specific customer requests or inputs.</p>
+</li>
+</ul>
+<p>Integrating these agents into customer business ecosystems can significantly enhance customer experience by delivering personalized, real-time conversational interactions. 
+Furthermore, AI Agents can be easily scaled to accommodate high volumes of customer interactions without the need for additional human agents, leading to improved customer satisfaction and reduced operational costs.</p>
+<p><strong>Prerequisites</strong></p>
+<p>To ensure the WxCC Tenant can be enabled for this feature and that the feature can be used effectively, the following requirements must be adhered to:</p>
+<ul>
+<li>Webex Contact Center tenant with <strong>Flex 3</strong> subscription and <strong>A-FLEX-AI-AGT SKU</strong></li>
+<li>Webex Connect capability on the tenant.</li>
+</ul>
+<h2 id="objective"><strong>Objective</strong></h2>
+<p>In this lab, participants will learn to:</p>
+<ul>
+<li>Set up Autonomous AI Agents from scratch.</li>
+<li>Configure these agents to generate and present answers to queries by accessing and utilizing a knowledge repository.</li>
+<li>Create and manage the underlying knowledge base</li>
+</ul>
+<h2 id="section-1-create-webex-ai-agent-and-knowledge-base"><strong>Section 1 : Create Webex AI Agent and Knowledge Base</strong></h2>
+<ul>
+<li>
+<p>Since the task is to create autonomous AI agents that are capable of answering questions from a knowledge base, the first step would be to build that knowledge base.</p>
+</li>
+<li>
+<p>Sign in to Control Hub using the URL https://admin.webex.com.</p>
+</li>
+<li>
+<p>Use the credentials highlighted in the table above.</p>
+</li>
+<li>
+<p>In Quick Links on the right pane of the Contact Center suite section, click Webex AI Agent to access the studio.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_1.png" width="700"></a></p>
+</li>
+<li>
+<p>On the Dashboard, click the Knowledge icon on the left navigation pane to go to the Knowledge Bases page.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_2.png" width="500"></a></p>
+</li>
+<li>
+<p>Click + Create Knowledge Base on the upper right corner.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_3.png" width="300"></a></p>
+</li>
+<li>
+<p>On the Create Knowledge Base page, enter the knowledge base name as <strong>WebexOne_KB_YourName</strong>.</p>
+</li>
+<li>
+<p>Click Create. The system creates a knowledge base with the specified name.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_4.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_4.png" width="500"></a></p>
+</li>
+<li>
+<p>For this lab, let's add FAQ content specific to buying a cae. Download the word doc from the link below.</p>
+</li>
+</ul>
+<p><a href="https://github.com/anujbhatiaminer82/Test2/blob/main/Buyingcarfaq.docx" title="download">Buying Car FAQ</a></p>
+<ul>
+<li>
+<p>Drag and drop the file to the knowledge base. Alternatively, click Add File to add a file. </p>
+</li>
+<li>
+<p><strong>DO Not Click on Process Button Yet</strong></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_6.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_6.png" width="500"></a></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="highlight"><pre><span></span><code>The system supports following file formats: PDF, DOC, DOCX, DOCX, TXT, XLSX, XLS and CSV. 
+TXT file size cannot exceed 2 MB. All other file size cannot exceed 10MB.
+</code></pre></div>
+</div>
+<ul>
+<li>
+<p>After adding the file, bring up the browser developer tool (Shortcut: Press F12 Key). </p>
+</li>
+<li>
+<p>Once the developer tool is up, ensure that it's on the "Console" tab.</p>
+</li>
+<li>
+<p>Clear the console logs by selecting the "Clear Console" button and click Process File to process them. </p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_7_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_7_1.png" width="500"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_7.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_7.png" width="500"></a></p>
+</li>
+<li>
+<p>When done, the system lists the files under the Files tab.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_8.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_8.png" width="500"></a></p>
+</li>
+<li>
+<p>The browser logs will show a 'success' status, along with the <strong>'kb_id'</strong>, <strong>'kb_category_id'</strong>, and <strong>'kb_documented_id'</strong>. </p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_8_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_8_1.png" width="700"></a></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is essential information for Cisco TAC team to analyze and troubleshoot any issues that may have caused the upload to fail. </p>
+</div>
+<ul>
+<li>
+<p>Navigate to the Information tab to view and track the details of the files you uploaded and the documents you created , <strong>KB ID</strong> is also present on the top left corner. </p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_9.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_9.png" width="700"></a></p>
+</li>
+<li>
+<p>Now, it's time to create the AI agent itself.</p>
+</li>
+<li>
+<p>On the Dashboard, click +Create agent.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_10.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_10.png" width="600"></a></p>
+</li>
+<li>
+<p>On the Create an AI Agent screen, click <strong>Start from scratch</strong> tile followed by Next button (bottom of the screen)</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_11.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_11.png" width="300"></a></p>
+</li>
+<li>
+<p>In the What type of agent are you building section, click Autonomous.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_12.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_12.png" width="300"></a></p>
+</li>
+<li>
+<p>On the 'Add the essential details' specify the following details:</p>
+<ul>
+<li><strong>Agent name</strong>: Enter the name of the AI agent susch as <strong>WebexOne_yourname</strong></li>
+<li><strong>System ID</strong>: A system-generated unique identifier. This field is editable.</li>
+<li><strong>AI engine</strong>: Select the required AI engine from the drop-down list  (default its Webex AI Pro 1.0 ).</li>
+<li><strong>Agent's goal</strong>: Provide a brief description of the AI agent's goal which in this case is to answer queries hence the prompt <strong>"Answer queries about cars"</strong>. </li>
+<li>Click Create button at the bottom of the screen.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_14.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_14.png" width="500"></a></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="highlight"><pre><span></span><code>Create button is grayed out until all fields are populated.
+</code></pre></div>
+</div>
+<ul>
+<li>
+<p>The autonomous AI agent for answering questions is successfully created and is now available on the Dashboard.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_15.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_15.png" width="800"></a></p>
+</li>
+<li>
+<p>The Profile tab on the Agent Configuration page, after creation, allows you to change the agent's image, the AI engine it uses, its goal, and the welcome message displayed when the AI agent is launched.  </p>
+</li>
+<li>
+<p>These are the fields that control these aspects:</p>
+<ul>
+<li><strong>URL for agent profile image</strong>: The default URL from which the system fetches the AI agent's logo or image.</li>
+<li><strong>AI engine</strong>: The chosen AI engine is displayed.</li>
+<li><strong>Welcome message</strong>: The default welcome message that the AI agent uses to start the interaction. </li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, Webex AI Pro 1.0 (with GPT 4.0) is the available AI engine.</p>
+</div>
+<ul>
+<li>
+<p>Lets map the AI agent with the Knowledge base that was created.</p>
+</li>
+<li>
+<p>Navigate to Configurations &gt; Knowledge tab and choose the configured knowledge base from the drop-down list.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_23.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_23.png" width="500"></a></p>
+</li>
+<li>
+<p>Click <strong>Save changes</strong> followed by <strong>Publish</strong> to make the AI agent live.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_24.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_24.png" width="500"></a></p>
+</li>
+</ul>
+<h2 id="section-2-test-webex-ai-agent"><strong>Section 2 : Test Webex AI Agent</strong></h2>
+<ul>
+<li>
+<p>Now it's time to test the AI agent. Quick way to check if the agent is constructing and answering queries correctly is to use the Preview option.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_16.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_16.png" width="300"></a></p>
+</li>
+<li>
+<p>Click the "Preview" button , a chat window appears in the bottom right corner of the pane where questions can be entered. Choose <strong>Start a chat</strong> option</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_17.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_17.png" width="300"></a></p>
+</li>
+<li>
+<p>To test in this example, we pose the question <strong>"What warranty comes with the vehicle?"</strong></p>
+</li>
+<li>
+<p>The response provided was accurate and consistent with the knowledge base created for this AI agent.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_18.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_18.png" width="500"></a></p>
+</li>
+<li>
+<p>The instruction section of the AI agent helps refine it to be more sophisticated and behave in the manner that the business dictates.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_18_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_18_2.png" width="500"></a></p>
+</li>
+<li>
+<p>In this example, let's work on these three areas of the bot with the following instructions:</p>
+<ul>
+<li><strong>Tone and Demeanor</strong>: Be polite, as the client is important.</li>
+<li><strong>Role Definition</strong>: Answer the question in no more than 50 words.</li>
+<li><strong>Response Guidelines</strong>: Thank the user for their interest and business.</li>
+</ul>
+</li>
+<li>
+<p>Add these guidelines to the Instructions section, save, and publish the changes.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_18_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_18_1.png" width="500"></a></p>
+</li>
+<li>
+<p>To test, pose the same question: <strong>"What warranty comes with the vehicle?"</strong></p>
+</li>
+<li>
+<p>As the Role Definition dictated answering within 50 words, you will see the answer within that limit.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_18_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_18_3.png" width="400"></a></p>
+</li>
+<li>
+<p>You can now view the details of these sessions and the history of configuration changes performed on the AI agent through the Sessions section. </p>
+</li>
+<li>
+<p>This information is useful for auditing, analyzing, and improving the AI agent.</p>
+</li>
+<li>
+<p>From the left navigation pane, click Sessions.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_19.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_19.png" width="200"></a></p>
+</li>
+<li>
+<p>The Sessions page appears, where each session is displayed as a record containing all the messages of the session, along with the following fields:</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_20.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_20.png" width="500"></a></p>
+<ul>
+<li><strong>Channels</strong>: The channel where the interaction took place.</li>
+<li><strong>Session ID</strong>: The unique room ID or session ID for a conversation.</li>
+<li><strong>Room Metadata</strong>: Additional information about the room.</li>
+</ul>
+</li>
+<li>
+<p>Click on an individual row in the sessions table for a detailed view of that session.</p>
+</li>
+<li>
+<p>The system displays the following session details:</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_21.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_21.png" width="800"></a></p>
+<ul>
+<li>The left panel displays details about the transactions.</li>
+<li>The right panel displays details about slot filling and fulfillment related to all actions. This is applicable to actionable actions for the bot.</li>
+</ul>
+</li>
+<li>
+<p>Finally, to view the details of configuration changes performed on the AI agent, you can use the History tab in the navigation pane.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/Excercise4_22.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/Excercise4_22.png" width="200"></a></p>
+</li>
+<li>
+<p>The History pane provides information about the version history and change logs.</p>
+</li>
+<li>
+<p>Please review this information at your convenience.</p>
+</li>
+</ul>
+<h1 id="result">Result</h1>
+<ul>
+<li>Congratulations on finishing the lab! Now, let's dive into the next exercise to enhance this agent so it can perform actions.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Excercise2/" class="md-footer__link md-footer__link--next" aria-label="Next: Lab 2 - Build Autonomous Webex AI Agent Actions">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Lab 2 - Build Autonomous Webex AI Agent Actions
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../template_assets/js/newLoad.js"></script>
+      
+        <script src="../template_assets/js/setInfo.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
