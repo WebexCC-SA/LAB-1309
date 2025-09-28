@@ -1,7 +1,7 @@
 ---
 site_name: "LAB-1309: Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips " # This must begin with the session ID, e.g. LABXXX-1234 This is my Cisco Live Lab
 site_description: "Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips " # must be same as "site_name"
-site_author: Anuj Bhatia
+site_author: Anuj Bhatia, D.K. Singh
 copyright: Copyright &copy; 2025 Cisco
 theme:
   name: material
@@ -44,11 +44,10 @@ extra_javascript:
   - template_assets/js/setInfo.js
 plugins:
   - search
-  - macros
-  # - with-pdf:
-  #     cover_title: LABXXX-1234
-  #     cover_subtitle: My famous WebexOne Lab
-  #     cover_logo: template_assets/Wx1_25_PDF_image.jpg
+  - with-pdf:
+      cover_title: "LAB-1309"
+      cover_subtitle: "Decoding AI in Webex Contact Center: Best Practices, Pitfalls, and Pro Tips"
+      cover_logo: template_assets/CL25_Cisco_Live_RGB_Midnight_General_Lockup_Horizontal.png
   - glightbox:
       touchNavigation: true
       loop: false

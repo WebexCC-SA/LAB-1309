@@ -67,7 +67,7 @@ In this lab, participants will learn to:
 
       ![Nav](./assets/Excercise4_4.png){ width="500" }
   
-- For this lab, let's add FAQ content specific to buying a cae. Download the word doc from the link below.
+- For this lab, let's add FAQ content specific to buying a car. Download the word doc from the link below.
  
   [Buying Car FAQ](https://github.com/anujbhatiaminer82/Test2/blob/main/Buyingcarfaq.docx "download")
   

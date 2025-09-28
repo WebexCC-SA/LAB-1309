@@ -30,7 +30,7 @@ In this lab, audience will learn to explore and set up Autonomous Webex AI Agent
 
 ![Nav](./assets/t2s1p3.png){ width="800" }
   
-- Proivde a **'Flow Name'** (i.e. _carcreateorder_name_), ensure that **'Start from Scrach'** is selected, and click **'Create'**. 
+- Provide a **'Flow Name'** (i.e. _carcreateorder_name_), ensure that **'Start from Scrach'** is selected, and click **'Create'**. 
 
 !!! info
 	This flow will interact with external database using API to create a car order.
