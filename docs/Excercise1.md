@@ -45,7 +45,7 @@ In this lab, participants will learn to:
 
 - Since the task is to create autonomous AI agents that are capable of answering questions from a knowledge base, the first step would be to build that knowledge base.
 
-- Sign in to Control Hub using the URL https://admin.webex.com.
+- Sign in to Control Hub using the URL https://admin.webex.com
 
 - Use the credentials highlighted in the table above.
 
